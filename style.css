@@ -200,7 +200,7 @@ color: var(--paraColor);
   line-height: 1.8;
   font-weight: 100;
   letter-spacing: 0.02em;
-  font-size: max(14px, 1.82vw);
+  font-size: max(16px, 1.82vw);
 }
 
 
