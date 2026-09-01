@@ -683,6 +683,21 @@ color: #eee;
   font-size: max(14px, 1.82vw);
 }
 
+.coverRect:hover {
+  cursor: pointer;
+}
+.containerMyLogoWrapper {
+  padding-block: 26px;
+}
+.containerMyLogo {
+  width: 200px;
+  aspect-ratio: 3/1;
+  position: relative;
+  left: -100px;
+}
+
+
+
 
 
 
