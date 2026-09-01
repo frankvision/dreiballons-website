@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Torben Süßkoch – Webdesign mit Fokus auf klaren Linien, unverfälschter Sprache und sauberen Animationen.">
-<title>Drei Ballons – Webdesign</title>
+<title>Torben Süßkoch – Webdesign</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="mainwrapper">
-
+    
     <div class="containerMyLogoWrapper">
       <div class="containerMyLogo">
         <a href="index.html">
@@ -17,8 +17,9 @@
         </a>
       </div>
     </div>
-
     
+    
+   <!-- <div class="headband"><p>Drei Ballons Drei Ballons Drei Ballons Drei Ballons Drei Ballons Drei Ballons Drei Ballons Drei Ballons Drei Ballons Drei Ballons Drei Ballons Drei Ballons</p></div>-->
     
     <div class="spacer">
     <div class="cageMobile">
@@ -50,7 +51,7 @@
     <div class="block one triangleblock">
       <div class="col one text triangletext">
         <h3 class="triangleh3">Ansatz</h3>
-        <p class="trianglep"> Ich baue Webseiten mit Fokus auf <span class="focus">klaren Linien</span>, <span class="focus">unverfälschter Sprache</span> und sauberen <span class="focus">Animati[...]</p>
+        <p class="trianglep"> Ich baue Webseiten mit Fokus auf <span class="focus">klaren Linien</span>, <span class="focus">unverfälschter Sprache</span> und sauberen <span class="focus">Animationen</span>.</p>
       </div>
       
       <div class="col two">
@@ -101,10 +102,10 @@
         <h3 class="forwork">Open For Work</h3>
         <p class="pforwork">Auf der Suche nach neuen Projekten, Partnern und Visionen.</p>
         <ul class="listforwork">
-          <li>Marketing</li>
+          <li>Werbekampagnen</li>
           <li>Webauftritte</li>
           <li>Live-Animationen</li>
-          <!--<li>Plakatwerbung</li>-->
+          <li>Plakatwerbung</li>
           </ul>
         <div id="sandwich"></div>
 </div>
@@ -121,7 +122,7 @@
     <div class="doit">
       <div class="doitwrapper">
         <h3 class="letswork">Let's Work</h3><div class="letsWorkSvg"></div>
-              <p>Schreib mir eine Nachricht</p>
+              <p class="letsworksub">Schreib mir eine Nachricht</p>
       </div>
 
       
@@ -161,13 +162,13 @@
                 <div class="field-error" data-fs-error="message"></div>
             </div>
 
-            <button type="submit" id="submitbutton" data-fs-submit-btn>Absenden</button>
+            <button class="submitbutton" type="submit" id="submitbutton" data-fs-submit-btn>Absenden</button>
 
             <div class="field-error" data-fs-error></div>
         </form>
 
         <div class="form-success" id="form-success" style="display: none;">
-            <p>Danke für deine Nachricht. Ich melde mich in Kürze.</p>
+            Danke für deine Nachricht. Ich melde mich in Kürze.
         </div>
     </div>
 
@@ -176,25 +177,24 @@
 
     
     <div class="bottom">
-      <p>
+      <p class="bottomfirst">
       Diese Website ist eine visuelle Darstellung meines digitalen Angebots zur Inanspruchnahme für der eklektizistischen Umsetzung von Gestaltungsvorhaben zugewandten Individuen.</p>
       
       <div class="decothing">
-        <div class="bar">
+        <div class="bar barleft">
           </div>
       <p class="extrabar">Reserved for establishment</p>
-              <div class="bar">
+              <div class="bar barright">
           </div>
       </div>
       
-      <p>Ein Unterfangen zur Verwirklichung visueller Wirklichkeiten im Fokus gegenwärtiger gestalterischer Prinzipien. Bereitstellung durch treffliche Umsetzung einer Formensprache abseits des [...]</p>
+      <p class="bottomsecond">Ein Unterfangen zur Verwirklichung visueller Wirklichkeiten im Fokus gegenwärtiger gestalterischer Prinzipien. Bereitstellung durch treffliche Umsetzung einer Formensprache abseits des Vorbeigehenden.</p>
       </div>
     
       <footer>
-        <nav>
-          <a href="impressum-datenschutz.html">Impressum</a>
-          <a href="impressum-datenschutz.html#datenschutz">Datenschutz</a>
-              <a href="#">nach oben ↑</a>
+        <nav class="imprint">
+          <a class="imprintlink imprintlink1" href="impressum-datenschutz.html#impressum">Impressum</a>
+          <a class="imprintlink imprintlink2" href="impressum-datenschutz.html#datenschutz">Datenschutz</a>
         </nav>
          
   </footer>
@@ -202,7 +202,8 @@
     </div>
   
 
-
+  
+  
 <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
 <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
 <script src="https://unpkg.com/gsap@3/dist/SplitText.min.js" defer></script>
