@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --borderColor: red;
+  --textColor: #f3f0ea;
+  --svgBackground: #777b;
+  --paraColor: #fffa;
+}
+
+.focus {
+  color: #C25940;
+}
+
+
+
+
+.cageMobile {
+  aspect-ratio: 4/3;
+  margin: 0 auto;
+  border: 2px solid var(--borderColor);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  container: inline-size;
+  width: 100%;
+  
+  
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+.spacer {
+
+  height: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    @media  (min-width: 600px) {
+    display: none;
+  }
+}
+
+#burgerMobile {
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+#SvgMobile {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+.maintextMobile {
+  font-size: min(24px, 14cqh);
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: white;
+  opacity: 1;
+  z-index: 100;
+}
+.endtitleMobile {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 200;
+font-size: min(24px, 14cqh);
+}
+
+
+
+
+
+
+body {
+ 
+  min-height: 100vh;
+  background: linear-gradient(80deg, #0a0a0a, #151515, #242424);
+  color: #f3f0ea;
+  font-family: 'Arial';
+  margin-top: 40px;
+}
+
+.mainwrapper {
+  width:98%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+body {
+  background: linear-gradient(#121212, #252525, #111);
+  min-height: 100vh;
+}
+
+.coverRect:hover {
+  cursor: pointer;
+}
+.containerMyLogoWrapper {
+}
+.containerMyLogo {
+  width: 300px;
+  aspect-ratio: 3/1;
+  position: relative;
+  left: -100px;
+}
+
+
+
+.imprint {
+  margin-top: 40px;
+  h3 {
+  margin-block: max(24px, 1.8vw);
+  font-size: max(18px, 3vw);
+  letter-spacing: 0.06em;
+  font-weight: 100;
+  }
+  h1 {
+      margin-block: max(24px, 1.8vw);
+  font-size: max(18px, 3vw);
+  letter-spacing: 0.06em;
+  font-weight: 100;
+  }
+  
+  p {
+color: var(--paraColor);
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.8vw);
+    
+  }
+}
+
+
+footer {
+  display: grid;
+  grid-auto-columns: 1fr;
+  place-items: center;
+  min-height: 80px;
+  background:   linear-gradient(to right, transparent, #121212, transparent),
+    linear-gradient(transparent, #121212, transparent);
+}
+footer nav {
+  padding: 20px;
+display: flex;
+  flex-direction: column;
+}
+
+footer nav a {
+  --mc: white;
+    color: var(--mc);
+  text-decoration: none;
+  display: block;
+  padding: 1vw;
+  color: var(--paraColor);
+  opacity: 0.5;
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.82vw);
+
+
+}
+
