@@ -665,6 +665,13 @@ nav a {
   font-size: max(14px, 1.82vw);
 }
 
+div p {
+color: navajowhite;
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.82vw);
+}
 
 
 
