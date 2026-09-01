@@ -1522,7 +1522,10 @@ svg.setAttribute("viewBox", "0 0 40 40");
 
 const letswork = SplitText.create(".letswork",{});
 
+const letsworksub = SplitText.create(".letsworksub", {});
 const rightnow = SplitText.create(".rightnow", {});
+
+
 
 const letsTl = gsap.timeline({
   repeat: -1,
@@ -1531,7 +1534,9 @@ const letsTl = gsap.timeline({
     start: "top 90%"
   }
 })
-
+letsTl.set(letsworksub.chars, {
+  opacity: 0
+})
 letsTl.set(letswork.chars, {
   opacity: 0
 })
@@ -1579,7 +1584,218 @@ letsTl.set(letswork.chars, {
   }
 })
 
-letsTl.to({},{duration: 6})
+letsTl.set(letsworksub.chars, {
+  
+  opacity: 1,
+  duration: 0.8,
+  ease: "sine.out",
+  stagger: {
+    from: "end",
+    amount: 2.2,
+  }
+},"0")
+
+letsTl.to({},{duration: 2})
+
+letsTl.set(letsworksub.chars, {
+  
+  opacity: 0,
+  duration: 0.8,
+   ease: "sine.out",
+  stagger: {
+    amount: 1.2,
+  }
+},">1")
+
+letsTl.set(letswork.chars, {
+  
+  opacity: 0,
+  duration: 0.8,
+   ease: "sine.out",
+  stagger: {
+    amount: 1.2,
+    from: "end"
+  }
+},"<")
+
+letsTl.to({},{duration: 1})
+
+
+
+
+
+
+const bottomfirst = SplitText.create(".bottomfirst",{});
+const extrabar = SplitText.create(".extrabar", {});
+const bottomsecond = SplitText.create(".bottomsecond", {});
+
+
+
+
+
+const bottomTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".bottom",
+    start: "top 90%"
+  }
+})
+
+gsap.set(bottomfirst.chars, {
+opacity: 0  
+})
+gsap.set(bottomsecond.chars, {
+opacity: 0  
+})
+
+gsap.set(extrabar.chars, {
+opacity: 0  
+})
+
+gsap.set(".barleft", {
+opacity: 0  
+})
+gsap.set(".barright", {
+opacity: 0  
+})
+
+
+bottomTl.set(bottomfirst.chars, {
+opacity: 1,
+  stagger: {
+    amount: 2
+  }
+})
+
+bottomTl.set(bottomsecond.chars, {
+opacity: 1,
+  stagger: {
+    amount: 2,
+    from: "end"
+  }
+},"<")
+
+bottomTl.set(extrabar.chars, {
+color: "firebrick",
+  opacity: 1,
+  stagger: {
+    amount: 2,
+    from: "center"
+  }
+},"<")
+
+bottomTl.to(".barleft", {
+opacity: 1,
+  duration: 4
+},"<")
+
+bottomTl.to(".barright", {
+opacity: 1,
+  duration: 4
+},"<")
+
+
+
+
+
+const imprintlink1 = SplitText.create(".imprintlink1",{});
+const imprintlink2 = SplitText.create(".imprintlink2", {});
+
+
+const imprintTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".imprint",
+    start: "top 90%"
+  }
+})
+
+imprintTl.set(imprintlink1.chars, {
+opacity: 0  
+})
+imprintTl.set(imprintlink2.chars, {
+opacity: 0  
+})
+
+
+imprintTl.fromTo(imprintlink1.chars, {
+y: 40,
+  opacity: 0,
+},
+{
+    duration: 2,
+ y: 0,
+  opacity: 1
+}
+)
+
+imprintTl.fromTo(imprintlink2.chars, {
+y: 40,
+  opacity: 0
+},
+{
+  duration: 2,
+ y: 0,
+  opacity: 1
+}, "<0.8")
+
+
+
+
+
+
+
+
+
+
+const formTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "form",
+    start: "top 90%"
+  }
+})
+
+gsap.set("label", {
+opacity: 0  
+})
+
+gsap.set(".submitbutton", {
+opacity: 0  
+})
+gsap.set("input", {
+opacity: 0  
+})
+gsap.set("textarea", {
+opacity: 0  
+})
+
+formTl.to("label", {
+  opacity: 0.7,
+  stagger: {
+  amount: 1
+  }
+})
+
+
+
+formTl.to(["input", "textarea"], {
+  opacity: 0.7,
+  stagger: {
+    amount: 1,
+    from: "end"
+  }
+})
+
+formTl.to(".submitbutton", {
+opacity: 1,
+  duration: 2
+})
+
+
+
+
+
+
+
+
 
 
 
@@ -2187,7 +2403,6 @@ contactForm.addEventListener("submit", (e)=> {
 
 
 
-
 function createLogo() {
 const svg2 = document.querySelector("#myLogo");
 const vb2 = svg2.viewBox.baseVal;
@@ -2279,10 +2494,12 @@ air3.setAttribute("stroke-dashoffset", air3l);
 */
 
 const balloons = [air, air2, air3];
-
-  balloons.forEach(balloon=> {
+  
+    balloons.forEach(balloon=> {
     balloon.classList.add("balloons")
   });
+  
+  
 }
 // drawBalloons(color, strokeWidth)
 drawBalloons("white", 1.8)
@@ -2308,6 +2525,11 @@ const myLogo = document.querySelector(".containerMylogo");
 createLogo();
 
 
+
+
+
+
+
   window.formspree = window.formspree || function () {
     (formspree.q = formspree.q || []).push(arguments);
   };
@@ -2319,3 +2541,16 @@ createLogo();
       document.getElementById('form-success').style.display = 'block';
     }
   });
+
+
+
+
+
+gsap.set(".balloons", {
+  opacity: 0
+})
+
+gsap.to(".balloons", {
+  opacity: 0.6,
+  duration: 4
+})
