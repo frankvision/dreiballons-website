@@ -655,5 +655,16 @@ color: var(--paraColor);
 }
 
 
+nav a {
+  color: var(--paraColor);
+  opacity: 0.5;
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.82vw);
+}
+
+
+
 
 
