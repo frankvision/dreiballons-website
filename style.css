@@ -191,7 +191,7 @@ z-index: -1;
 
 .block .col h3 {
   margin-block: max(24px, 1.4vw);
-  font-size: max(18px, 3vw);
+  font-size: max(18px, 3.1vw);
   letter-spacing: 0.06em;
   font-weight: 100;
 }
@@ -203,6 +203,14 @@ color: var(--paraColor);
   font-size: max(16px, 1.82vw);
 }
 
+@media (min-width: 601px) and (max-width: 1024px) {
+  .block .col p {
+    font-size: max(16px, 2.1vw);
+  }
+  .block .col h3 {
+    font-size: max(20px, 3.4vw);
+  }
+}
 
 #mySvg {
   width: 100%;
