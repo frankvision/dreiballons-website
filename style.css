@@ -615,5 +615,45 @@ nav a {
 }
 
 
+.coverRect:hover {
+  cursor: pointer;
+}
+.containerMyLogoWrapper {
+}
+.containerMyLogo {
+  width: 300px;
+  aspect-ratio: 3/1;
+  position: relative;
+  left: -100px;
+}
+
+
+
+.imprint {
+  margin-top: 40px;
+  h3 {
+  margin-block: max(24px, 1.8vw);
+  font-size: max(18px, 3vw);
+  letter-spacing: 0.06em;
+  font-weight: 100;
+  }
+  h1 {
+      margin-block: max(24px, 1.8vw);
+  font-size: max(18px, 3vw);
+  letter-spacing: 0.06em;
+  font-weight: 100;
+  }
+  
+  p {
+color: var(--paraColor);
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.8vw);
+    
+  }
+}
+
+
 
 
