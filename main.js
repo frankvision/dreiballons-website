@@ -1636,7 +1636,7 @@ const bottomsecond = SplitText.create(".bottomsecond", {});
 const bottomTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".bottom",
-    start: "top 90%"
+    start: "top 76%"
   }
 })
 
