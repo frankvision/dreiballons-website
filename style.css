@@ -98,6 +98,7 @@ body {
   background: linear-gradient(80deg, #0a0a0a, #151515, #242424);
   color: #f3f0ea;
   font-family: 'Arial';
+  padding-bottom: 40px;
 }
 
 .mainwrapper {
@@ -111,9 +112,7 @@ body {
   margin: 0 auto;
   border: 2px solid var(--borderColor);
   position: relative;
-  margin-bottom: 20px
-  
-  
+  margin-bottom: 40px;
   
   @media (max-width: 600px) {
     display: none;
@@ -191,7 +190,7 @@ z-index: -1;
 
 .block .col h3 {
   margin-block: max(24px, 1.4vw);
-  font-size: max(18px, 3.1vw);
+  font-size: max(18px, 3vw);
   letter-spacing: 0.06em;
   font-weight: 100;
 }
@@ -200,17 +199,29 @@ color: var(--paraColor);
   line-height: 1.8;
   font-weight: 100;
   letter-spacing: 0.02em;
-  font-size: max(16px, 1.82vw);
+  font-size: max(14px, 1.82vw);
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
-  .block .col p {
-    font-size: max(16px, 2.1vw);
-  }
-  .block .col h3 {
-    font-size: max(20px, 3.4vw);
+.headband {
+  overflow: hidden;
+  text-wrap: nowrap;
+  color: #343434;
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.82vw);
+  font-style: italic;
+  position: relative;
+  p {
+    position: relative;
+    left: -60px;
+     background: linear-gradient(60deg,#777, coral, #777);
+    opacity: 0.4;
+background-clip: text;
+  color: transparent;
   }
 }
+
 
 #mySvg {
   width: 100%;
@@ -478,6 +489,10 @@ footer nav a {
   display: grid;
   gap: 12px;
   
+  @media (max-width: 800px) {
+    padding-inline: 2vw;
+  }
+  
   button {
     margin: max(4vw, 20px) auto;
     display: block;
@@ -517,7 +532,7 @@ footer nav a {
   
   
   label {
-    padding: 10px 20px;
+    padding: 10px max(4vw, 4px);
     color: white;
     font-weight: 100;
     text-transform: uppercase;
@@ -557,7 +572,7 @@ footer nav a {
     -webkit-appearance: none;
     -webkit-box-shadow: none;
     box-shadow: none;
-    padding: 10px 4px;
+    padding: 10px max(1vw, 2px);
     font-size: clamp(14px, 16vw, 14px);
     letter-spacing: 0.1em;
   }
@@ -622,17 +637,23 @@ footer nav a {
 
 nav a {
   color: var(--paraColor);
+  opacity: 0.5;
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.82vw);
 }
+
 
 
 .coverRect:hover {
   cursor: pointer;
 }
 .containerMyLogoWrapper {
-  margin-block-start: 40px;
+  padding-block: 26px;
 }
 .containerMyLogo {
-  width: 300px;
+  width: 200px;
   aspect-ratio: 3/1;
   position: relative;
   left: -100px;
@@ -664,43 +685,6 @@ color: var(--paraColor);
     
   }
 }
-
-
-nav a {
-  color: var(--paraColor);
-  opacity: 0.5;
-  line-height: 1.8;
-  font-weight: 100;
-  letter-spacing: 0.02em;
-  font-size: max(14px, 1.82vw);
-}
-
-.form-success p {
-color: #eee;
-  line-height: 1.8;
-  font-weight: 100;
-  letter-spacing: 0.02em;
-  font-size: max(14px, 1.82vw);
-}
-
-.coverRect:hover {
-  cursor: pointer;
-}
-.containerMyLogoWrapper {
-  padding-block: 12px;
-}
-.containerMyLogo {
-  width: 200px;
-  aspect-ratio: 3/1;
-  position: relative;
-  left: -100px;
-}
-
-.balloons {
-  opacity: 0.6;
-
-
-
 
 
 
