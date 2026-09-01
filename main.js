@@ -2279,6 +2279,10 @@ air3.setAttribute("stroke-dashoffset", air3l);
 */
 
 const balloons = [air, air2, air3];
+
+  balloons.forEach(balloon=> {
+    balloon.classList.add("balloon")
+  });
 }
 // drawBalloons(color, strokeWidth)
 drawBalloons("white", 1.8)
