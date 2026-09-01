@@ -390,7 +390,7 @@ let resizeTimer = null;
 const sally = [4, 6, 9, 14, 17, 22, 24];
 const sally2 = [2, 4, 9, 12, 17, 20, 22];
 const sally3 = [0, 1, 2, 6, 7, 8, 9, 10, 11, 15, 16, 17, 18, 19, 20, 24, 25, 26];
-const sally4 = [7, 26, 25, 1, 2, 6, 17, 18, 19, 24];
+const sally4 = [7, 26, 25, 1, 2, 6, 8, 18, 19, 24];
 
 function buildEverything() {
   if (masterTL) masterTL.kill();
