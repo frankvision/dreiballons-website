@@ -103,7 +103,8 @@ body {
 .mainwrapper {
   width:98%;
   max-width: 900px;
-  margin: 60px auto;
+  margin: 0 auto;
+  padding-top: 60px;
 }
 
 .cage {
@@ -111,6 +112,7 @@ body {
   margin: 0 auto;
   border: 2px solid var(--borderColor);
   position: relative;
+  
   margin-block: 40px;
   
   @media (max-width: 600px) {
