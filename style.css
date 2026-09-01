@@ -619,6 +619,7 @@ nav a {
   cursor: pointer;
 }
 .containerMyLogoWrapper {
+  margin-block-start: 40px;
 }
 .containerMyLogo {
   width: 300px;
