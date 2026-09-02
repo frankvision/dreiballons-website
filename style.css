@@ -555,7 +555,7 @@ footer nav a {
     letter-spacing: 0.1em;
     
     @media (max-width: 600px) {
-      font-size: 12px;
+      font-size: 14px;
       text-align: start;
     }
   }
@@ -586,7 +586,7 @@ footer nav a {
     -webkit-box-shadow: none;
     box-shadow: none;
     padding: 10px max(1vw, 2px);
-    font-size: clamp(14px, 16vw, 14px);
+    font-size: clamp(16px, 16vw, 14px);
     letter-spacing: 0.1em;
   }
   
