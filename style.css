@@ -507,7 +507,7 @@ footer nav a {
   }
   
   button {
-    margin: max(4vw, 20px) auto;
+    margin: max(4vw, 40px) auto;
     display: block;
     font-family: inherit;
     cursor: pointer;
