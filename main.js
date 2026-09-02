@@ -1742,6 +1742,16 @@ y: 40,
   opacity: 1
 }, "<0.8")
 
+  imprintTl.fromTo(".imprintlink3, {
+y: 40,
+  opacity: 0
+},
+{
+  duration: 2,
+ y: 0,
+  opacity: 1
+}, "<0.8")
+
 
 
 
