@@ -12,6 +12,10 @@
   --shapeColor: #C41E3A66;
 }
 
+html {
+  background: #242424;
+}
+
 .focus {
   color: #C25940;
 }
