@@ -261,7 +261,7 @@ footer {
     linear-gradient(transparent, #121212, transparent);
 }
 footer nav {
-  padding: 16px;
+  padding: 10px;
 display: flex;
   flex-direction: column;
 }
