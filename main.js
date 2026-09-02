@@ -2322,7 +2322,7 @@ moTl.to(".endtextMobile", {
 },">0.2");
   
   
-    moTl.fromTo([pairsMobile[2], pairsMobile[3], pairsMobile[8], pairsMobile[9]], {
+    moTl.fromTo([pairsMobile[2], pairsMobile[3], pairsMobile[8], pairsMobile[11]], {
   opacity: 0,
   scale: 0.2,
 },
@@ -2335,7 +2335,7 @@ moTl.to(".endtextMobile", {
   }
    ,
 });
-  moTl.to([pairsMobile[2], pairsMobile[3], pairsMobile[8], pairsMobile[9]],
+  moTl.to([pairsMobile[2], pairsMobile[3], pairsMobile[8], pairsMobile[11]],
            {
   opacity: 0,
   duration: 0.2,
