@@ -1752,7 +1752,7 @@ y: 40,
 {
   duration: 2,
  y: 0,
-  opacity: 1
+  opacity: 0.5
 }, "<0.8")
 
 
