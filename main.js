@@ -2544,7 +2544,7 @@ createLogo();
     onSuccess: function () {
       document.getElementById('contact-form').style.display = 'none';
       document.getElementById('form-success').style.display = 'block';
-     document.querySelector(".letswork").textContent = "Let's Go"
+ 
     }
   });
 
