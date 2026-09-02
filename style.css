@@ -9,6 +9,7 @@
   --textColor: #f3f0ea;
   --svgBackground: transparent;
   --paraColor: #fffa;
+  --shapeColor: #C41E3A66;
 }
 
 .focus {
@@ -301,7 +302,7 @@ footer nav a {
   position: absolute;
   height: 2px;
   flex: 1;
-  background: red;
+  background: shapeColor;
 }
 
 .decothing {
@@ -649,14 +650,27 @@ nav a {
 .coverRect:hover {
   cursor: pointer;
 }
-.containerMyLogoWrapper {
+.containerMy
+
+
+
+
+
+Wrapper {
   padding-block: 26px;
 }
 .containerMyLogo {
   width: 200px;
   aspect-ratio: 3/1;
   position: relative;
+  
   left: -100px;
+  
+  @media (max-width: 600px) {
+    left: -66px;
+  }
+    
+  
 }
 
 
@@ -686,5 +700,11 @@ color: var(--paraColor);
   }
 }
 
+.form-success {
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.8vw);  
+}
 
 
