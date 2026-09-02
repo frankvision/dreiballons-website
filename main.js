@@ -1720,6 +1720,9 @@ imprintTl.set(imprintlink2.chars, {
 opacity: 0  
 })
 
+imprintTl.set(".imprintlink3", {
+opacity: 0  
+})
 
 imprintTl.fromTo(imprintlink1.chars, {
 y: 40,
