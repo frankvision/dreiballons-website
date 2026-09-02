@@ -259,7 +259,7 @@ footer {
   min-height: 80px;
   background:   linear-gradient(to right, transparent, #121212, transparent),
     linear-gradient(transparent, #121212, transparent);
-  padding-bottom: 30px;
+  padding-bottom: 36px;
 }
 footer nav {
   padding: 10px;
