@@ -1,5 +1,10 @@
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
+
+const shapeColor = "	#C41E3A66";
+
+const cinemaColor = shapeColor;
+
 function shuffle(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -184,7 +189,7 @@ function drawCrosses(targetSelector, cinemaNumber, rowAmount, crossColor) {
 
       if (row === 0) {
         let vert = document.createElement("div");
-        vert.style.background = "red";
+        vert.style.background = cinemaColor;
         vert.style.position = "absolute";
         vert.style.left = `${col * cellSize + offsetX + io}px`;
         vert.style.top = `${row * cellSize + offsetY + io}px`;
@@ -214,7 +219,7 @@ const sandwichtl = gsap.timeline({
 })
 
 sandwichtl.to(".pairs2", {
-  background: "red",
+  background: cinemaColor,
   scale: 3,
   stagger: {
     each: 0.1,
@@ -700,7 +705,7 @@ L ${sex1} ${sed}
 Z`);
   tri.setAttribute("stroke", "none");
   tri.setAttribute("stroke-width", 0.5);
-  tri.setAttribute("fill", "#FF000066");
+  tri.setAttribute("fill", shapeColor);
   triangleWedges.push(tri);
   triangleSvg.append(tri);
 }
@@ -785,7 +790,7 @@ Z`);
   path.setAttribute("stroke", "none");
   path.setAttribute("stroke-width", 0.5);
 
-  path.setAttribute("fill", "#FF000066");
+  path.setAttribute("fill", shapeColor);
   ballSvg.append(path);
   path.setAttribute("stroke-linejoin", "round");
 }
@@ -869,7 +874,7 @@ L ${ssl} ${splitStart}
 Z`);
   path.setAttribute("stroke", "none");
   path.setAttribute("stroke-width", 0.5);
-  path.setAttribute("fill", "#FF000066");
+  path.setAttribute("fill", shapeColor);
     squareWedges.push(path);
   squareSvg.append(path);
 }
@@ -1053,7 +1058,7 @@ triangleTl.from(triangleWedges, {
     from: "end",
     each: 0.22
   }
-},"<0.2")
+},"<0.4")
 
 
 
@@ -1087,7 +1092,7 @@ circleTl.from(circleWedges, {
     from: "end",
     each: 0.22
   }
-},"<0.2")
+},"<0.4")
 
 
 
@@ -1123,7 +1128,7 @@ squareTl.from(squareWedges, {
     from: "end",
     each: 0.22
   }
-},"<0.2")
+},"<0.4")
 
 
 
@@ -1636,7 +1641,7 @@ const bottomsecond = SplitText.create(".bottomsecond", {});
 const bottomTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".bottom",
-    start: "top 76%"
+    start: "top 90%"
   }
 })
 
@@ -1904,7 +1909,7 @@ function drawLay(targetSelector, cinemaNumber, rowAmount, crossColor) {
 
       if (col === 0) {
         let hort = document.createElement("div");
-        hort.style.background = "red";
+        hort.style.background = cinemaColor;
         hort.style.position = "absolute";
         hort.style.left = `${col * cellSize + offsetX + io}px`;
         hort.style.top = `${row * cellSize + offsetY + io}px`;
@@ -1920,7 +1925,7 @@ function drawLay(targetSelector, cinemaNumber, rowAmount, crossColor) {
 
       if (row === 0) {
         let vert = document.createElement("div");
-        vert.style.background = "red";
+        vert.style.background = cinemaColor;
         vert.style.position = "absolute";
         vert.style.left = `${col * cellSize + offsetX + io}px`;
         vert.style.top = `${row * cellSize + offsetY + io}px`;
@@ -2235,7 +2240,7 @@ moTl.to({}, {duration: 0.1});
 moTl.to(vertsMobile, {
   duration: 0.6,
   scaleX: 1,
-  background: "red",
+  background: cinemaColor,
   y: 0,
   ease: "sine.out",
   opacity: 0.4,
@@ -2266,7 +2271,7 @@ moTl.to(".maintextMobile",
            {
   scale: 1,
   opacity: 0,
-  color: "red",
+  color: 	cinemaColor,
   duration: 0.1,
   stagger: {
     amount: 0.3
@@ -2539,6 +2544,7 @@ createLogo();
     onSuccess: function () {
       document.getElementById('contact-form').style.display = 'none';
       document.getElementById('form-success').style.display = 'block';
+     document.querySelector(".letswork").textContent = "Let's Go"
     }
   });
 
