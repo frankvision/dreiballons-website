@@ -101,9 +101,6 @@ body {
   font-family: 'Arial';
   padding-bottom: 40px;
 
-
-    padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .mainwrapper {
@@ -263,7 +260,7 @@ footer nav a {
     color: var(--mc);
   text-decoration: none;
   display: block;
-  padding: 1vw;
+  padding: max(1lh, 1vw);
 }
 
 .batman {
@@ -647,6 +644,7 @@ nav a {
   font-weight: 100;
   letter-spacing: 0.02em;
   font-size: max(14px, 1.82vw);
+  
 }
 
 
