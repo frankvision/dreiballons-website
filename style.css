@@ -271,7 +271,7 @@ footer nav a {
     color: var(--mc);
   text-decoration: none;
   display: block;
-  padding: max(1lh, 1vw);
+  padding: max(20px, 1vw);
 }
 
 .batman {
