@@ -2037,7 +2037,7 @@ moTl.fromTo(pairsMobile[1], {
     amount: 0.3
   }
 }, "point1");
-moTl.fromTo(pairsMobile[10], {
+moTl.fromTo(pairsMobile[1], {
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2050,7 +2050,7 @@ moTl.fromTo(pairsMobile[10], {
   }
 },"<");
 
-moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
+moTl.fromTo([pairsMobile[1],pairsMobile[1]],{
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2064,7 +2064,7 @@ moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
 },"<");
   
   
-moTl.fromTo([pairsMobile[3], pairsMobile[9]], {
+moTl.fromTo([pairsMobile[1], pairsMobile[9]], {
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2106,7 +2106,7 @@ moTl.fromTo(pairsMobile[0], {
 }, "point2");
   
   
-moTl.fromTo(pairsMobile[2], {
+moTl.fromTo(pairsMobile[1], {
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2119,7 +2119,7 @@ moTl.fromTo(pairsMobile[2], {
   }
 },"<");
 
-moTl.fromTo([pairsMobile[7],pairsMobile[14]],{
+moTl.fromTo([pairsMobile[1],pairsMobile[14]],{
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2132,7 +2132,7 @@ moTl.fromTo([pairsMobile[7],pairsMobile[14]],{
   }
 },"<");
 
-moTl.fromTo([pairsMobile[5], pairsMobile[9]], {
+moTl.fromTo([pairsMobile[1], pairsMobile[9]], {
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2145,7 +2145,7 @@ moTl.fromTo([pairsMobile[5], pairsMobile[9]], {
   }
 },"<");
 
-moTl.fromTo(pairsMobile[11], {
+moTl.fromTo(pairsMobile[1], {
    autoAlpha: 0,
   scale: 0.2,
 },
