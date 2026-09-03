@@ -2361,6 +2361,32 @@ autoAlpha: 0,
   }
    ,
 },">0.2");
+  
+  
+   moTl.fromTo([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]], {
+    autoAlpha: 0,
+  scale: 0.2,
+},
+           {
+  scale: 0.4,
+    autoAlpha: 1,
+  duration: cd,
+  stagger: {
+    amount: 0.4
+  }
+   ,
+},">0.2");
+  moTl.to([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
+           {
+  duration: 0.2,
+    autoAlpha: 0,
+    clearProps: "transform",
+  stagger: {
+    amount: 0.1,
+    from: "end"
+  }
+   ,
+},">0.2");
 
   
   
