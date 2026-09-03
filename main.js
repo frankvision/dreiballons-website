@@ -1997,8 +1997,16 @@ const moTl = gsap.timeline({
   moTl.addLabel("point13", 12);
   moTl.addLabel("point14", 13);
   
+    moTl.addLabel("point15", 14);
+  moTl.addLabel("point16", 15);
+  moTl.addLabel("point17", 16);
+  
+    moTl.addLabel("point18", 17);
+  moTl.addLabel("point19", 18);
+  moTl.addLabel("point20", 19);
+  
 
-moTl.timeScale(1.25);
+moTl.timeScale(1);
 moTl.set(".horts100", {
 autoAlpha: 0,
 });
@@ -2074,12 +2082,13 @@ moTl.fromTo([pairsMobile[3], pairsMobile[9]], {
 
 
 
-moTl.to({}, {duration: 0.3})
+moTl.to({}, {duration: 0.2})
 moTl.to(pairsMobile, {
    autoAlpha: 0,
   duration: 0.2
 });
 
+  ////move2////
 moTl.fromTo(pairsMobile[0], {
    autoAlpha: 0,
   scale: 0.2,
@@ -2153,8 +2162,9 @@ moTl.to(pairsMobile, {
   duration: 0.2
 });
   
+  ////move3////
   
-moTl.to({}, {duration: 0.1})
+  
 moTl.set(".maintextMobile",
            {
   scale: 1,
@@ -2174,12 +2184,13 @@ moTl.to(".maintextMobile",
     amount: 0.3
   }
 });
-moTl.to({}, {duration: 0.1})
 
 moTl.set(hortsMobile, {
    autoAlpha: 0,
   scaleX: 0.9,
 },"<")
+  
+ ////move4////
 moTl.to(vertsMobile, {
   duration: 0.6,
    autoAlpha: 0.4,
@@ -2200,7 +2211,7 @@ moTl.to(vertsMobile, {
   }
 });
 
-moTl.to({}, {duration: 0.05})
+////move5////
 moTl.to(hortsMobile, {
   duration: 0.6,
    autoAlpha: 0.4,
@@ -2220,7 +2231,7 @@ moTl.to(hortsMobile, {
   }
 });
 
-moTl.to({}, {duration: 0.1});
+////move6////
 
 moTl.set(".maintextMobile",
            {
@@ -2243,7 +2254,6 @@ moTl.to(".maintextMobile",
     from: "end"
   }
 });
-moTl.to({}, {duration: 0.1});
 
 
 
@@ -2253,10 +2263,11 @@ moTl.set(vertsMobile, {
    autoAlpha: 0,
   scaleY: 1
 });
-
+////point7////
 moTl.to(vertsMobile, {
   duration: 0.6,
   y: 0,
+  background: "lime",
    autoAlpha: 0.4,
   ease: "sine.out",
     stagger: {
@@ -2275,30 +2286,28 @@ moTl.to(vertsMobile, {
     amount: 0.2
   }
 });
-moTl.to({}, {duration: 0.1});
 
 
-
-moTl.to(vertsMobile, {
+////move8////
+moTl.to(hortsMobile, {
   duration: 0.6,
   scaleX: 1,
   background: cinemaColor,
-  y: 0,
+  x: 0,
   ease: "sine.out",
    autoAlpha: 0.4,
 }, "point8");
-moTl.to({}, {duration: 0.2})
+  
 
-moTl.to(vertsMobile, {
-     y: i=>i%2===0 ? 20 : -20,
+
+moTl.to(hortsMobile, {
+     x: i=>i%2===0 ? 20 : -20,
   duration: 0.6,
     ease: "sine.out",
    autoAlpha: 0,
 });
 
-
-
-moTl.to({}, {duration: 0.1})
+  ////move9////
 moTl.set(".maintextMobile",
            {
   scale: 1,
@@ -2321,17 +2330,18 @@ moTl.to(".maintextMobile",
 });
 
 
-moTl.to({}, {duration: 0.1})
 
 
+////move10////
+  
 moTl.to(".endtextMobile", {
   duration: 4.8,
    autoAlpha: 1,
 },"point10")
   
+  ////move11////
   
-  
-  
+  ////move12////
   moTl.fromTo([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]], {
    autoAlpha: 0,
   scale: 0.2,
@@ -2344,7 +2354,10 @@ moTl.to(".endtextMobile", {
     amount: 0.4
   }
    ,
-},"point11");
+},"point12");
+  
+  
+  ////move13////
   
    moTl.to([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]],
            {
@@ -2357,10 +2370,11 @@ autoAlpha: 0,
     from: "end"
   }
    ,
-},">0.4");
+},"point13");
   
   
-    moTl.fromTo([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]], {
+////move14////
+  moTl.fromTo([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]], {
     autoAlpha: 0,
   scale: 0.2,
 },
@@ -2372,9 +2386,11 @@ autoAlpha: 0,
     amount: 0.4
   }
    ,
-},"point12");
+},"point14");
   
   
+  
+  ////move15////
   moTl.to([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]],
            {
   duration: 0.2,
@@ -2385,10 +2401,11 @@ autoAlpha: 0,
     from: "end"
   }
    ,
-},">0.4");
+},"point15");
   
   
-     moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
+  ////move16//// 
+  moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
   duration: 0.2,
        scale: 0.4,
@@ -2397,8 +2414,9 @@ autoAlpha: 0,
     amount: 0.8,
   }
    ,
-},"point13");
+},"point16");
   
+  ////move17////
   
   moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
@@ -2411,19 +2429,19 @@ autoAlpha: 0,
     from: "end"
   }
    ,
-},">0.2");
+},"point17");
   
   
   
 
-
+////point18////
 
 
 
 moTl.set(".endtextMobile", {
   autoAlpha: 0,
   duration: 0.2
-},"point14")
+},"point18")
 moTl.to({}, {duration: 2})
 
  
