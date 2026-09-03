@@ -2349,7 +2349,9 @@ autoAlpha: 0,
     amount: 0.4
   }
    ,
-},">0.2");
+},">0.6");
+  
+  
   moTl.to([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]],
            {
   duration: 0.2,
