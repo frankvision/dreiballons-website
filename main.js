@@ -2348,7 +2348,7 @@ autoAlpha: 0,
     amount: 0.2
   }
    ,
-});
+},">0.2");
   moTl.to([pairsMobile[2], pairsMobile[3], pairsMobile[8], pairsMobile[11]],
            {
   duration: 0.2,
