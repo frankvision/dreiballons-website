@@ -2118,7 +2118,7 @@ moTl.fromTo(pairsMobile[2], {
   }
 },"<");
 
-moTl.fromTo([pairsMobile[3],pairsMobile[7]],{
+moTl.fromTo([pairsMobile[3],pairsMobile[8]],{
    autoAlpha: 0,
   scale: 0.2,
 },
