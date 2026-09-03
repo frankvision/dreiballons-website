@@ -967,6 +967,7 @@ svg.setAttribute("viewBox", "0 0 40 40");
 const sctl = gsap.timeline({
   scrollTrigger: {
     trigger: ".forwork",
+    start: "top 50%",
     toggleActions: "play none none none"
   }
 })
@@ -1641,7 +1642,7 @@ const bottomsecond = SplitText.create(".bottomsecond", {});
 const bottomTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".bottom",
-    start: "top 90%"
+    start: "top 50%"
   }
 })
 
@@ -1709,7 +1710,7 @@ const imprintlink2 = SplitText.create(".imprintlink2", {});
 const imprintTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".imprint",
-    start: "top 90%"
+    start: "top 80%"
   }
 })
 
@@ -1767,7 +1768,7 @@ y: 40,
 const formTl = gsap.timeline({
   scrollTrigger: {
     trigger: "form",
-    start: "top 90%"
+    start: "top 50%"
   }
 })
 
