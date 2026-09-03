@@ -2309,7 +2309,7 @@ moTl.to(hortsMobile, {
 
 
 moTl.to(hortsMobile, {
-     x: i=>i%2===0 ? 20 : -20,
+     x: i=>i%2===0 ? -20 : 20,
   duration: 0.4,
     ease: "sine.out",
    autoAlpha: 0,
