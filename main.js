@@ -2279,7 +2279,6 @@ moTl.to(vertsMobile, {
 moTl.to(vertsMobile, {
   duration: 0.4,
    autoAlpha: 0,
-  scaleX: 1.2,
   y: i=>i%2===0 ? -20 : 20,
     ease: "sine.in",
   stagger: {
