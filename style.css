@@ -660,9 +660,10 @@ nav a {
 }
 
 
-
-.coverRect:hover {
+.coverRect {
   cursor: pointer;
+}
+.coverRect:hover {
 }
 .containerMyLogoWrapper {
     padding-block: 26px;
@@ -672,6 +673,7 @@ nav a {
   top: 1.1rem;
   left: 1.1rem;
   z-index: 10;
+    background: lime;
   }
 
 }
@@ -684,10 +686,22 @@ nav a {
   
   @media (max-width: 600px) {
     left: -66px;
-  }
-    
-  
+  } 
 }
+
+  #myLogo {
+    z-index: 40;
+    position: relative;
+  }
+  .logoBackground {
+    width: 46%;
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
 
 
 
