@@ -2667,16 +2667,19 @@ gsap.set(".balloons", {
 })
 
 
+function scrollToTopHandler(e) {
+  e.preventDefault();
+  gsap.to(window, {
+    duration: 1.8,
+    scrollTo: 0,
+    ease: "sine.out"
+  });
+}
+
 const scrollTops = document.querySelectorAll(".scrollTop");
 scrollTops.forEach(el => {
-  el.addEventListener("click", (e) => {
-    e.preventDefault();
-    gsap.to(window, {
-      duration: 1.8,
-      scrollTo: 0,
-      ease: "sine.out"
-    });
-  });
+  el.addEventListener("click", scrollToTopHandler);
+  el.addEventListener("touchend", scrollToTopHandler);
 });
 
 ScrollTrigger.matchMedia({
