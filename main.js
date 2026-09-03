@@ -2399,7 +2399,7 @@ moTl.to(".endtextMobile", {
   autoAlpha: 0,
   duration: 0.2
 },">0.6")
-moTl.to({}, {duration: 1.4})
+moTl.to({}, {duration: 1.8})
 
  
   
