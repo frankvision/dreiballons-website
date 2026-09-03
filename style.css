@@ -4,7 +4,776 @@
   box-sizing: border-box;
 }
 
+:root {* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
+  --borderColor: transparent;
+  --textColor: #f3f0ea;
+  --svgBackground: transparent;
+  --paraColor: #fffa;
+  --shapeColor: #C41E3A55";
+}
+
+html {
+  background: #1d1d1d;
+}
+
+.focus {
+  color: #C25940;
+}
+
+
+
+
+.cageMobile {
+  aspect-ratio: 4/3;
+  margin: 0 auto;
+  border: 2px solid var(--borderColor);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  container: inline-size;
+  width: 100%;
+  
+  
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+.spacer {
+
+height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    @media  (min-width: 600px) {
+    display: none;   
+  }
+}
+
+#burgerMobile {
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+#SvgMobile {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+}
+.maintextMobile {
+  font-size: min(24px, 14cqh);
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: white;
+  opacity: 1;
+  z-index: 100;
+}
+.endtitleMobile {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 200;
+font-size: min(24px, 14cqh);
+}
+
+
+
+
+
+
+body {
+ 
+  min-height: 100vh;
+  background: linear-gradient(80deg, #0a0a0a, #151515, #242424);
+  color: #f3f0ea;
+  font-family: 'Arial';
+  padding-bottom: 60px;
+
+    padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+
+}
+
+.mainwrapper {
+  width:98%;
+  max-width: 900px;
+  margin: 0 auto;
+
+
+    padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.cage {
+  aspect-ratio: 3/1;
+  margin: 0 auto;
+  border: 2px solid var(--borderColor);
+  position: relative;
+  margin-bottom: 40px;
+  
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+#mainSvg {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+
+#burger {
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.horts {
+  transform-origin: center;
+}
+
+.verts {
+  transform-origin: center;
+}
+
+.crossx {
+transform-origin: center;
+z-index: -1;
+}
+.crossy {
+  transform-origin: center;
+ z-index: -1; 
+}
+.pairs {
+ opacity: 0; 
+  position: absolute;
+}
+.maintext {
+  font-size: 6.6vw;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0;
+  z-index: 10
+}
+
+.block {
+  font-size: clamp(16px, 1.8vw, 20px);
+  font-weight: 900;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 100%;
+  min-height: 200px;
+}
+
+.col {
+  border: 2px solid var(--borderColor);
+  width: 100%;
+  overflow: hidden;
+  min-height: 100px;
+}
+.col.text {
+    padding: max(30px, 6vw) max(24px, 4vw);
+}
+
+.block .col h3 {
+  margin-block: max(24px, 1.4vw);
+  font-size: max(18px, 3vw);
+  letter-spacing: 0.06em;
+  font-weight: 100;
+}
+.block .col p {
+color: var(--paraColor);
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.82vw);
+}
+
+.headband {
+  overflow: hidden;
+  text-wrap: nowrap;
+  color: #343434;
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.82vw);
+  font-style: italic;
+  position: relative;
+  p {
+    position: relative;
+    left: -60px;
+     background: linear-gradient(60deg,#777, coral, #777);
+    opacity: 0.4;
+background-clip: text;
+  color: transparent;
+  }
+}
+
+
+#mySvg {
+  width: 100%;
+}
+
+#myCanvas {
+  width: 100%;
+  height: 100%;
+}
+
+circle {
+}
+
+svg {
+  display: block;
+}
+
+footer {
+  display: grid;
+  grid-auto-columns: 1fr;
+  place-items: center;
+  min-height: 80px;
+  background:   linear-gradient(to right, transparent, #121212, transparent),
+    linear-gradient(transparent, #121212, transparent);
+  padding-bottom: 40px;
+}
+footer nav {
+  padding: 10px;
+display: flex;
+  flex-direction: column;
+}
+
+footer nav a {
+  --mc: white;
+    color: var(--mc);
+  text-decoration: none;
+  display: block;
+  padding: max(10px, 1vw);
+}
+
+.batman {
+  position: relative;
+  color: #fffb;
+}
+
+.batman::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 0, 0, 0.4);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  z-index: -1;
+}
+
+.bottom {
+  padding: 4vw;
+  color: #fff8;
+  font-style: italic;
+  font-size: max(10px, 1.1vw);
+  text-align: center;
+  line-height: 1.6;
+  
+}
+.extrabar {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.extrabar::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  flex: 1;
+  background: shapeColor;
+}
+
+.decothing {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.bar {
+  height: 2px;
+  flex: 1;
+  background: currentColor;
+  top: 50%;
+}
+
+
+.block.six .col
+{
+  padding: 6vw;
+  text-align: center;
+   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  gap: 20px;
+  
+    color: var(--paraColor);
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    color: white;
+  }
+  
+  .pforwork {
+    
+    color: coral;
+    font-family: monospace;
+  }
+    
+    ul {
+      list-style: none;
+    }
+ 
+    li {
+      padding: 14px;
+      font-weight: 100;
+      letter-spacing: 0.2em;
+      
+  }
+
+}
+
+#sandwich {
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.4rem;
+  mask-image: 
+    linear-gradient(to top, #0001, black),
+    linear-gradient(#0001, black),
+    linear-gradient(to left,transparent, black, #0001),
+    linear-gradient(60deg, #0002 0% 60%, #0003);
+  mask-composite: intersect;
+}
+
+
+.coverboxtriangle {
+  width: 100%;
+  aspect-ratio: 4/3;
+  margin: 0 auto;
+  position: relative;
+  
+}
+#triangleSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+#triangleSvg, #ballSvg, #sqareSvg {
+}
+.coverboxball {
+  width: 100%;
+  aspect-ratio: 4/3;
+  margin: 0 auto;
+  position: relative;
+  
+}
+
+
+.svgwrap {
+  width: 100%;
+  aspect-ratio: 4/3;
+    background: purple;
+}
+#ballSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.col:has(#triangleSvg), 
+.col:has(#ballSvg), 
+.col:has(#squareSvg) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    background: var(--svgBackground);
+}
+
+.coverboxsquare {
+  width: 100%;
+  aspect-ratio: 4/3;
+  margin: 0 auto;
+  position: relative;
+  
+}
+#squareSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+.introblock {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 4vw;
+}
+
+.workwrap {
+}
+
+
+
+
+
+
+.packet {
+  width: 100%:
+  margin: 0 auto;
+  aspect-ratio: 4/2;
+  position: relative;
+  overflow: hidden;
+}
+
+.layer1, .layer2 {
+  inset: 0;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  color: #004;
+  container-type: inline-size;
+  h3 {
+    font-size: 14cqi;
+    color: white;
+    font-family: monospace;
+    text-transform: uppercase;
+ 
+  }
+}
+
+#svg1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+}
+
+
+.contact-form {
+  padding-inline: 10vw;
+  display: grid;
+  gap: 12px;
+  
+  @media (max-width: 800px) {
+    padding-inline: 2vw;
+  }
+  
+  button {
+    margin: max(4vw, 40px) auto;
+    display: block;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    padding: 14px 20px;
+      letter-spacing: 0.14em;
+    opacity: 0.6;
+    
+        font-size: clamp(16px, 16vw, 16px)
+    
+
+    
+       &:active {
+         background: coral;
+    }
+  }
+  
+  button:hover {
+    filter: brightness(0.8);
+  }
+  
+}
+
+.form-row {
+  
+  
+
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: min(16px, 6vw);
+    @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+  
+  
+  label {
+    padding: 10px max(4vw, 4px);
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    opacity: 0.5;
+    text-align: center;
+    font-size: clamp(6px, 14vw, 14px);
+    letter-spacing: 0.1em;
+    
+    @media (max-width: 600px) {
+      font-size: 14px;
+      text-align: start;
+    }
+  }
+  
+  input {
+    padding: 0 4px;
+    border: none;
+
+    outline: none;
+    appearance: none !important;
+        border-bottom: 0.5px solid #777;
+  }
+  
+  
+  textarea {
+    align-self: start;
+    resize: none;
+    height: 140px;
+    margin-top: 2vw;
+    font-family: sans-serif;
+  }
+  
+  input, textarea {
+        background: transparent;
+    color: #bbb;
+    appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 10px max(1vw, 2px);
+    font-size: clamp(16px, 16vw, 14px);
+    letter-spacing: 0.1em;
+  }
+  
+
+}
+
+.block.contact {
+  margin-top: 20px;
+}
+
+
+.doit {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.spot1, .spot2 {
+}
+
+.doitwrapper {
+     padding: max(30px, 6vw) max(24px, 4vw);
+  width: fit-content;
+  
+  @media (max-width: 600px) {
+  }
+}
+.doit h3 {
+  font-size: max(34px, 6vw);
+
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.14em;
+  
+  @media (max-width: 600px) {
+    margin-top: 60px;
+  }
+}
+
+.doit p {
+    font-size: max(14px, 1.4vw);
+
+  text-transform: uppercase;
+  font-weight: 300;
+  color: coral;
+  opacity: 0.8;
+  margin-top: 14px;
+    letter-spacing: 0.14em;
+  margin-bottom: max(4vw, 24px);
+  
+}
+
+.doit h3:nth-child(1) {
+}
+
+.letsWorkSvg {
+  display: flex;
+  justify-content: space-evenly;
+  display: none;
+}
+
+
+nav a {
+  color: var(--paraColor);
+  opacity: 0.5;
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.82vw);
+  
+}
+
+
+.coverRect {
+  cursor: pointer;
+}
+.coverRect:hover {
+}
+.containerMyLogoWrapper {
+    padding-block: 26px;
+  @media (max-width: 600px) { 
+        padding-block: 0;
+    position: fixed;
+  top: 1.1rem;
+  left: 1.1rem;
+  z-index: 10;
+  }
+
+}
+.containerMyLogo {
+  width: 200px;
+  aspect-ratio: 3/1;
+  position: relative;
+  
+  left: -100px;
+  
+  @media (max-width: 600px) {
+    left: -66px;
+  } 
+}
+
+  #myLogo {
+     touch-action: manipulation;
+    z-index: 40;
+    position: relative;
+  }
+  .logoBackground {
+    width: 46%;
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+
+
+.imprint {
+  margin-top: 40px;
+  h3 {
+  margin-block: max(24px, 1.8vw);
+  font-size: max(18px, 3vw);
+  letter-spacing: 0.06em;
+  font-weight: 100;
+  }
+  h1 {
+      margin-block: max(24px, 1.8vw);
+  font-size: max(18px, 3vw);
+  letter-spacing: 0.06em;
+  font-weight: 100;
+  }
+  
+  p {
+color: var(--paraColor);
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.8vw);
+    
+  }
+}
+
+.form-success {
+  line-height: 1.8;
+  font-weight: 100;
+  letter-spacing: 0.02em;
+  font-size: max(14px, 1.8vw);  
+}
+
+.pairs100 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+body {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+body.ready {
+  opacity: 1;
+}
+
+.maintextMobile,
+.endtextMobile,
+.pairs100,
+.horts100,
+.verts100,
+.maintext,
+.pairs1,
+.horts1,
+.verts1,
+#myLogo {
+  opacity: 0;
+}
+
+.balloons {
+  opacity: 0.4;
+}
   --borderColor: transparent;
   --textColor: #f3f0ea;
   --svgBackground: transparent;
