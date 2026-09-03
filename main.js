@@ -2652,3 +2652,16 @@ gsap.set(".balloons", {
   opacity: 0
 })
 
+
+const scrollTops = document.querySelectorAll(".scrollTop")
+
+scrollTops.forEach(el=> {
+el.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+  
+  })
