@@ -2337,7 +2337,7 @@ autoAlpha: 0,
 },">0.2");
   
   
-    moTl.fromTo([pairsMobile[3], pairsMobile[8], pairsMobile[10], pairsMobile[13]], {
+    moTl.fromTo([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]], {
     autoAlpha: 0,
   scale: 0.2,
 },
@@ -2350,7 +2350,7 @@ autoAlpha: 0,
   }
    ,
 },">0.2");
-  moTl.to([pairsMobile[3], pairsMobile[8], pairsMobile[10], pairsMobile[13]],
+  moTl.to([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]],
            {
   duration: 0.2,
     autoAlpha: 0,
