@@ -2395,10 +2395,10 @@ autoAlpha: 0,
 
 
 
-moTl.to(".endtextMobile", {
+moTl.set(".endtextMobile", {
   autoAlpha: 0,
   duration: 0.2
-},">0.6")
+},">0.4")
 moTl.to({}, {duration: 1.8})
 
  
