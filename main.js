@@ -2287,7 +2287,7 @@ moTl.to(vertsMobile, {
   }
 });
 
-moTl.set(vertsMobile, {
+moTl.set(hortsMobile, {
    x: i=>i%2===0 ? 20 : -20,
    autoAlpha: 0,
   scaleY: 1
