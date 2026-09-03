@@ -1031,7 +1031,7 @@ const h3Time = 0.1;
 const triangleTl = gsap.timeline({
   scrollTrigger: {
  trigger: ".triangleblock",
-    start: "top 68%",
+    start: "top 50%",
     toggleActions: "play none none none"
 }
 })
@@ -2337,7 +2337,7 @@ autoAlpha: 0,
 },">0.2");
   
   
-    moTl.fromTo([pairsMobile[2], pairsMobile[3], pairsMobile[8], pairsMobile[11]], {
+    moTl.fromTo([pairsMobile[2], pairsMobile[3], pairsMobile[10], pairsMobile[11]], {
     autoAlpha: 0,
   scale: 0.2,
 },
@@ -2350,7 +2350,7 @@ autoAlpha: 0,
   }
    ,
 },">0.2");
-  moTl.to([pairsMobile[2], pairsMobile[3], pairsMobile[8], pairsMobile[11]],
+  moTl.to([pairsMobile[2], pairsMobile[3], pairsMobile[10], pairsMobile[11]],
            {
   duration: 0.2,
     autoAlpha: 0,
