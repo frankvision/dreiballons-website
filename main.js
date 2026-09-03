@@ -2487,8 +2487,8 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     handleBreakpointChange(mq);
     mq.addEventListener("change", handleBreakpointChange);
-     gsap.to("#myLogo", { opacity: 0.6, duration: 4 });
-  }, 1500); // muss zur CSS transition-duration passen
+     gsap.to("#myLogo", { opacity: 1, duration: 4 });
+  }, 1500); //equals css transition time
 });
 
 const contactForm = document.querySelector(".contact-form");
@@ -2671,7 +2671,6 @@ const scrollTops = document.querySelectorAll(".scrollTop");
 scrollTops.forEach(el => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
-      e.currentTarget.blur();
     gsap.to(window, {
       duration: 1.8,
       scrollTo: 0,
