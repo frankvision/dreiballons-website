@@ -2330,11 +2330,11 @@ autoAlpha: 0,
      clearProps: "transform",
    
   stagger: {
-    amount: 0.2,
+    amount: 0.1,
     from: "end"
   }
    ,
-},">0.2");
+},">0.4");
   
   
     moTl.fromTo([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]], {
@@ -2349,7 +2349,7 @@ autoAlpha: 0,
     amount: 0.4
   }
    ,
-},">0.6");
+},">0.8");
   
   
   moTl.to([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]],
@@ -2358,11 +2358,11 @@ autoAlpha: 0,
     autoAlpha: 0,
     clearProps: "transform",
   stagger: {
-    amount: 0.2,
+    amount: 0.1,
     from: "end"
   }
    ,
-},">0.2");
+},">0.4");
   
   
      moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
