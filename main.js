@@ -2309,51 +2309,54 @@ moTl.to(".endtextMobile", {
   
   
   
-  moTl.set([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]],
+  moTl.fromTo([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]], {
+   autoAlpha: 0,
+  scale: 0.2,
+},
            {
+  scale: 0.4,
+  autoAlpha: 1,
   duration: 0.2,
-       scale: 0.4,
-    autoAlpha: 1,
   stagger: {
-    amount: 1,
+    amount: 0.2
   }
    ,
-},">0.2");
+},"<0.8");
   
-  
-  moTl.set([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]],
+   moTl.to([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]],
            {
+autoAlpha: 0,
   duration: 0.2,
-       scale: 0.2,
-    autoAlpha: 0,
-    clearProps: "transform",
+     clearProps: "transform",
+   
   stagger: {
-    amount: 1,
+    amount: 0.2,
     from: "end"
   }
    ,
 },">0.2");
   
-   moTl.set([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]],
+  
+    moTl.fromTo([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]], {
+    autoAlpha: 0,
+  scale: 0.2,
+},
            {
-  duration: 0.2,
-       scale: 0.4,
+  scale: 0.4,
     autoAlpha: 1,
+  duration: cd,
   stagger: {
-    amount: 1,
+    amount: 0.2
   }
    ,
 },">0.2");
-  
-  
-  moTl.set([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]],
+  moTl.to([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]],
            {
   duration: 0.2,
-       scale: 0.2,
     autoAlpha: 0,
     clearProps: "transform",
   stagger: {
-    amount: 1,
+    amount: 0.2,
     from: "end"
   }
    ,
