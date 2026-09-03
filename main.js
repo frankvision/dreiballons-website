@@ -2505,6 +2505,7 @@ contactForm.addEventListener("submit", (e)=> {
 
 
 function createLogo() {
+  
 const svg2 = document.querySelector("#myLogo");
 const vb2 = svg2.viewBox.baseVal;
 const xm2 = vb2.width / 10;
@@ -2515,6 +2516,19 @@ const cellSizepp = vb2.width / colspp;
 
 const oxa = xm2 * 1;
 
+  
+  const backdrop = document.createElementNS(ns, "rect");
+  
+  backdrop.setAttribute("width", "40%");
+  backdrop.setAttribute("height", "100%");
+   backdrop.setAttribute("fill", "#242424");
+  backdrop.setAttribute("x", "30.5%");
+    backdrop.setAttribute("y", "0");
+
+  
+  svg2.append(backdrop);
+  
+  
 
 function drawBalloons(color, strokeWidth) {
 const air = document.createElementNS(ns, "path");
