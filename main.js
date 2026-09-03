@@ -2197,7 +2197,7 @@ moTl.to(vertsMobile, {
   scale: 1,
   stagger: {
     from: "start",
-    amount: 0.1
+    amount: 0.08
   }
 }, "point4");
 
@@ -2207,7 +2207,7 @@ moTl.to(vertsMobile, {
    autoAlpha: 0,
   stagger: {
     from: "start",
-    amount: 0.2
+    amount: 0.08
   }
 });
 
@@ -2218,7 +2218,7 @@ moTl.to(hortsMobile, {
   scaleX: 1,
   stagger: {
     from: "start",
-    amount: 0.01
+    amount: 0.08
   }
 },"point5");
 
@@ -2227,7 +2227,7 @@ moTl.to(hortsMobile, {
   duration: 0.4,
   stagger: {
     from: "start",
-    amount: 0.2
+    amount: 0.08
   }
 });
 
@@ -2272,7 +2272,7 @@ moTl.to(vertsMobile, {
   ease: "sine.out",
     stagger: {
     from: "start",
-    amount: 0.1
+    amount: 0.08
   }
 }, "point7");
 
@@ -2283,7 +2283,7 @@ moTl.to(vertsMobile, {
     ease: "sine.in",
   stagger: {
     from: "start",
-    amount: 0.2
+    amount: 0.08
   }
 });
 
@@ -2296,6 +2296,10 @@ moTl.to(hortsMobile, {
   x: 0,
   ease: "sine.out",
    autoAlpha: 0.4,
+    stagger: {
+    from: "start",
+    amount: 0.08
+  }
 }, "point8");
   
 
@@ -2305,6 +2309,10 @@ moTl.to(hortsMobile, {
   duration: 0.4,
     ease: "sine.out",
    autoAlpha: 0,
+    stagger: {
+    from: "start",
+    amount: 0.08
+  },
 });
 
   ////move9////
