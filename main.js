@@ -2671,6 +2671,7 @@ const scrollTops = document.querySelectorAll(".scrollTop");
 scrollTops.forEach(el => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
+      e.currentTarget.blur();
     gsap.to(window, {
       duration: 1.8,
       scrollTo: 0,
@@ -2687,7 +2688,7 @@ ScrollTrigger.matchMedia({
       onUpdate: (self) => {
         if (self.direction === 1) {
           gsap.to(".containerMyLogoWrapper", {
-            y: -100,
+            y: -200,
             autoAlpha: 0,
             duration: 0.3,
             ease: "power2.out"
