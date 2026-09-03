@@ -2317,7 +2317,6 @@ moTl.to(".endtextMobile", {
   scale: 0.4,
   autoAlpha: 1,
   duration: 0.2,
-    clearProps: "transform",
   stagger: {
     amount: 0.2
   }
@@ -2341,7 +2340,6 @@ autoAlpha: 0,
     moTl.fromTo([pairsMobile[2], pairsMobile[3], pairsMobile[8], pairsMobile[11]], {
     autoAlpha: 0,
   scale: 0.2,
-      clearProps: "transform",
 },
            {
   scale: 0.4,
