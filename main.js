@@ -2487,7 +2487,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     handleBreakpointChange(mq);
     mq.addEventListener("change", handleBreakpointChange);
-     gsap.to(".balloons", { opacity: 0.6, duration: 4 });
+     gsap.to("#myLogo", { opacity: 0.6, duration: 4 });
   }, 1500); // muss zur CSS transition-duration passen
 });
 
@@ -2524,7 +2524,7 @@ const oxa = xm2 * 1;
    backdrop.setAttribute("fill", "#242424");
   backdrop.setAttribute("x", "30.5%");
     backdrop.setAttribute("y", "0");
-
+  backdrop.setAttribute("fill-opacity", 0.9)
   
   svg2.append(backdrop);
   
@@ -2662,24 +2662,21 @@ createLogo();
 
 
 
-gsap.set(".balloons", {
+gsap.set("#myLogo", {
   opacity: 0
 })
 
 
-function scrollToTopHandler(e) {
-  e.preventDefault();
-  gsap.to(window, {
-    duration: 1.8,
-    scrollTo: 0,
-    ease: "sine.out"
-  });
-}
-
 const scrollTops = document.querySelectorAll(".scrollTop");
 scrollTops.forEach(el => {
-  el.addEventListener("click", scrollToTopHandler);
-  el.addEventListener("touchend", scrollToTopHandler);
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    gsap.to(window, {
+      duration: 1.8,
+      scrollTo: 0,
+      ease: "sine.out"
+    });
+  });
 });
 
 ScrollTrigger.matchMedia({
