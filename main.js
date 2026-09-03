@@ -2337,7 +2337,7 @@ autoAlpha: 0,
 },">0.2");
   
   
-    moTl.fromTo([pairsMobile[2], pairsMobile[3], pairsMobile[10], pairsMobile[11]], {
+    moTl.fromTo([pairsMobile[3], pairsMobile[8], pairsMobile[10], pairsMobile[11]], {
     autoAlpha: 0,
   scale: 0.2,
 },
@@ -2350,7 +2350,7 @@ autoAlpha: 0,
   }
    ,
 },">0.2");
-  moTl.to([pairsMobile[2], pairsMobile[3], pairsMobile[10], pairsMobile[11]],
+  moTl.to([pairsMobile[3], pairsMobile[8], pairsMobile[10], pairsMobile[11]],
            {
   duration: 0.2,
     autoAlpha: 0,
@@ -2413,6 +2413,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     handleBreakpointChange(mq);
     mq.addEventListener("change", handleBreakpointChange);
+     gsap.to(".balloons", { opacity: 0.6, duration: 4 });
   }, 1500); // muss zur CSS transition-duration passen
 });
 
@@ -2577,7 +2578,3 @@ gsap.set(".balloons", {
   opacity: 0
 })
 
-gsap.to(".balloons", {
-  opacity: 0.6,
-  duration: 4
-})
