@@ -715,9 +715,30 @@ color: var(--paraColor);
   font-size: max(14px, 1.8vw);  
 }
 
-.pairsMobile {
+.pairs100 {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+}
+
+body {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+body.ready {
+  opacity: 1;
+}
+
+.maintextMobile,
+.endtextMobile,
+.pairs100,
+.horts100,
+.verts100,
+.maintext,
+.pairs1,
+.horts1,
+.verts1,
+.balloons {
+  opacity: 0;
 }
