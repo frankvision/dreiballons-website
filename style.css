@@ -690,6 +690,7 @@ nav a {
 }
 
   #myLogo {
+     touch-action: manipulation;
     z-index: 40;
     position: relative;
   }
