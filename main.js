@@ -2321,7 +2321,7 @@ moTl.to(".endtextMobile", {
     amount: 0.4
   }
    ,
-},"<1.2");
+},"<1.4");
   
    moTl.to([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]],
            {
@@ -2374,7 +2374,7 @@ autoAlpha: 0,
     amount: 1,
   }
    ,
-},">0.4");
+},">0.6");
   
   
   moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
