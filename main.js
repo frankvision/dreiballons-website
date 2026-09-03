@@ -2318,7 +2318,7 @@ moTl.to(".endtextMobile", {
   autoAlpha: 1,
   duration: 0.2,
   stagger: {
-    amount: 1.8
+    amount: 0.2
   }
    ,
 },"<0.8");
