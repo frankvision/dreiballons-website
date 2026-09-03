@@ -761,6 +761,6 @@ body.ready {
 .pairs1,
 .horts1,
 .verts1,
-.balloons {
+#myLogo {
   opacity: 0;
 }
