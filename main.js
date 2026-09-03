@@ -1,7 +1,6 @@
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 
-
 const shapeColor = "	#C41E3A66";
 
 const cinemaColor = shapeColor;
@@ -2328,6 +2327,7 @@ moTl.to(".endtextMobile", {
            {
   opacity: 0,
   duration: 0.2,
+        visibility: "hidden",
   stagger: {
     amount: 0.2,
     from: "end"
@@ -2353,6 +2353,7 @@ moTl.to(".endtextMobile", {
            {
   opacity: 0,
   duration: 0.2,
+    visibility: "hidden",
   stagger: {
     amount: 0.2,
     from: "end"
