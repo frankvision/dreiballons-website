@@ -1967,7 +1967,7 @@ drawLay("#burgerMobile", 100, 3);
   
 
 
-const cd = 0.4;
+const cd = 0.2;
 
 
 const split = SplitText.create(".endtitleMobile", {
@@ -2192,7 +2192,7 @@ moTl.set(hortsMobile, {
   
  ////move4////
 moTl.to(vertsMobile, {
-  duration: 0.6,
+  duration: 0.4,
    autoAlpha: 0.4,
   scale: 1,
   stagger: {
@@ -2213,7 +2213,7 @@ moTl.to(vertsMobile, {
 
 ////move5////
 moTl.to(hortsMobile, {
-  duration: 0.6,
+  duration: 0.4,
    autoAlpha: 0.4,
   scaleX: 1,
   stagger: {
@@ -2265,7 +2265,7 @@ moTl.set(vertsMobile, {
 });
 ////point7////
 moTl.to(vertsMobile, {
-  duration: 0.6,
+  duration: 0.4,
   y: 0,
   background: cinemaColor,
    autoAlpha: 0.4,
@@ -2291,7 +2291,7 @@ moTl.to(vertsMobile, {
 
 ////move8////
 moTl.to(hortsMobile, {
-  duration: 0.6,
+  duration: 0.4,
   scaleX: 1,
   background: cinemaColor,
   x: 0,
@@ -2303,7 +2303,7 @@ moTl.to(hortsMobile, {
 
 moTl.to(hortsMobile, {
      x: i=>i%2===0 ? 20 : -20,
-  duration: 0.6,
+  duration: 0.4,
     ease: "sine.out",
    autoAlpha: 0,
 });
@@ -2323,7 +2323,6 @@ moTl.to(".maintextMobile",
            {
   scale: 1,
    autoAlpha: 0,
-  color: 	cinemaColor,
   duration: 0.1,
   stagger: {
     amount: 0.3
