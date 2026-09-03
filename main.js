@@ -2034,6 +2034,8 @@ moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
     amount: 0.24
   }
 },"<");
+  
+  
 moTl.fromTo([pairsMobile[3], pairsMobile[9]], {
    autoAlpha: 0,
   scale: 0.2,
@@ -2067,9 +2069,11 @@ moTl.fromTo(pairsMobile[0], {
    autoAlpha: 1,
   duration: cd,
   stagger: {
-    amount: 0.2
+    amount: 0.3
   }
 },"<0.2");
+  
+  
 moTl.fromTo(pairsMobile[2], {
    autoAlpha: 0,
   scale: 0.2,
@@ -2079,7 +2083,7 @@ moTl.fromTo(pairsMobile[2], {
    autoAlpha: 1,
   duration: cd,
   stagger: {
-    amount: 0.2
+    amount: 0.3
   }
 },"<");
 
@@ -2105,7 +2109,7 @@ moTl.fromTo([pairsMobile[5], pairsMobile[9]], {
    autoAlpha: 1,
   duration: cd,
   stagger: {
-    amount: 0.24
+    amount: 0.3
   }
 },"<");
 
