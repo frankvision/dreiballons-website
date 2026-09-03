@@ -2325,9 +2325,9 @@ moTl.to(".endtextMobile", {
   
    moTl.to([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]],
            {
-  opacity: 0,
+autoAlpha: 0,
   duration: 0.2,
-        visibility: "hidden",
+   
   stagger: {
     amount: 0.2,
     from: "end"
@@ -2351,9 +2351,8 @@ moTl.to(".endtextMobile", {
 });
   moTl.to([pairsMobile[2], pairsMobile[3], pairsMobile[8], pairsMobile[11]],
            {
-  opacity: 0,
   duration: 0.2,
-    visibility: "hidden",
+    autoAlpha: 0,
   stagger: {
     amount: 0.2,
     from: "end"
