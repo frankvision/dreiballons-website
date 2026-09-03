@@ -2363,51 +2363,41 @@ autoAlpha: 0,
 },">0.2");
   
   
-   moTl.fromTo([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]], {
-    autoAlpha: 0,
-  scale: 0.2,
-},
+     moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
-  scale: 0.4,
+  duration: 0.2,
     autoAlpha: 1,
-  duration: cd,
+    clearProps: "transform",
   stagger: {
-    amount: 0.4
+    amount: 0.6,
+    from: "end"
   }
    ,
 },">0.2");
+  
+  
   moTl.to([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
   duration: 0.2,
     autoAlpha: 0,
     clearProps: "transform",
   stagger: {
-    amount: 0.1,
+    amount: 0.6,
     from: "end"
   }
    ,
 },">0.2");
 
-  
-  
-/* moTl.to({}, {duration: 3}) */
-/*moTl.to(".endtext", {
-  opacity: 0.2,
-  duration: 0.1,
-})
-*/
-moTl.to({}, {duration: 0.5})
-moTl.set(".endtextMobile", {
-  autoAlpha: 1
-})
-moTl.to({}, {duration: .6})
+
 
 
 moTl.to(".endtextMobile", {
   autoAlpha: 0,
-  duration: 0.4
-})
-moTl.to({}, {duration: 0.2})
+  duration: 0.6
+},"<")
+moTl.to({}, {duration: 0.6})
+
+ 
   
     return function cleanup() {
     moTl.kill();
