@@ -1977,42 +1977,42 @@ const moTl = gsap.timeline({
 
 moTl.timeScale(1.25);
 moTl.set(".horts100", {
-  opacity: 0
+autoAlpha: 0,
 });
 
 moTl.set(".verts100", {
-  opacity: 0
+ autoAlpha: 0,
 });
 
 moTl.set(".maintextMobile", {
-  opacity: 0
+ autoAlpha: 0,
 });
 moTl.set(".endtextMobile", {
-  opacity: 0
+  autoAlpha: 0,
 })
 moTl.set(".pairs100", {
-  opacity: 0,
+   autoAlpha: 0,
 });
 
 moTl.fromTo(pairsMobile[1], {
-  opacity: 0,
+   autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.6,
-  opacity: 1,
+   autoAlpha: 1,
   duration: cd,
   stagger: {
     amount: 0.3
   }
 });
 moTl.fromTo(pairsMobile[10], {
-  opacity: 0,
+   autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.2,
-  opacity: 1,
+   autoAlpha: 1,
   duration: cd,
   stagger: {
     amount: 0.3
@@ -2020,24 +2020,24 @@ moTl.fromTo(pairsMobile[10], {
 },"<");
 
 moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
-  opacity: 0,
+   autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.4,
-  opacity: 1,
+   autoAlpha: 1,
   duration: cd,
   stagger: {
     amount: 0.24
   }
 },"<");
 moTl.fromTo([pairsMobile[3], pairsMobile[9]], {
-  opacity: 0,
+   autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.6,
-  opacity: 1,
+   autoAlpha: 1,
   duration: cd,
   stagger: {
     amount: 0.28
@@ -2051,29 +2051,29 @@ moTl.fromTo([pairsMobile[3], pairsMobile[9]], {
 
 moTl.to({}, {duration: 0.3})
 moTl.to(pairsMobile, {
-  opacity: 0,
+   autoAlpha: 0,
   duration: 0.2
 });
 
 moTl.fromTo(pairsMobile[0], {
-  opacity: 0,
+   autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.4,
-  opacity: 1,
+   autoAlpha: 1,
   duration: cd,
   stagger: {
     amount: 0.2
   }
 });
 moTl.fromTo(pairsMobile[2], {
-  opacity: 0,
+   autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.2,
-  opacity: 1,
+   autoAlpha: 1,
   duration: cd,
   stagger: {
     amount: 0.2
@@ -2081,12 +2081,12 @@ moTl.fromTo(pairsMobile[2], {
 },"<");
 
 moTl.fromTo([pairsMobile[3],pairsMobile[6]],{
-  opacity: 0,
+   autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.4,
-  opacity: 1,
+   autoAlpha: 1,
   duration: cd,
   stagger: {
     amount: 0.3
@@ -2094,12 +2094,12 @@ moTl.fromTo([pairsMobile[3],pairsMobile[6]],{
 },"<");
 
 moTl.fromTo([pairsMobile[5], pairsMobile[9]], {
-  opacity: 0,
+   autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.6,
-  opacity: 1,
+   autoAlpha: 1,
   duration: cd,
   stagger: {
     amount: 0.24
@@ -2107,12 +2107,12 @@ moTl.fromTo([pairsMobile[5], pairsMobile[9]], {
 },"<");
 
 moTl.fromTo(pairsMobile[11], {
-  opacity: 0,
+   autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.3,
-  opacity: 1,
+   autoAlpha: 1,
   duration: cd,
   stagger: {
     amount: 0.4
@@ -2122,14 +2122,14 @@ moTl.fromTo(pairsMobile[11], {
 
 moTl.to({}, {duration: 0.2})
 moTl.to(pairsMobile, {
-  opacity: 0,
+   autoAlpha: 0,
   duration: 0.2
 });
 moTl.to({}, {duration: 0.1})
 moTl.set(".maintextMobile",
            {
   scale: 1,
-  opacity: 0.6,
+   autoAlpha: 0.6,
   duration: 0.4,
   stagger: {
     amount: 0.3
@@ -2139,7 +2139,7 @@ moTl.set(".maintextMobile",
 moTl.to(".maintextMobile",
            {
   scale: 1,
-  opacity: 0,
+   autoAlpha: 0,
   duration: 0.1,
   stagger: {
     amount: 0.3
@@ -2148,12 +2148,12 @@ moTl.to(".maintextMobile",
 moTl.to({}, {duration: 0.1})
 
 moTl.set(hortsMobile, {
-  opacity: 0,
+   autoAlpha: 0,
   scaleX: 0.9,
 },"<")
 moTl.to(vertsMobile, {
   duration: 0.6,
-  opacity: 0.4,
+   autoAlpha: 0.4,
   scale: 1,
   stagger: {
     from: "start",
@@ -2164,7 +2164,7 @@ moTl.to(vertsMobile, {
 moTl.to(vertsMobile, {
   transformOrigin: "50% 50%",
   duration: 0.4,
-  opacity: 0,
+   autoAlpha: 0,
   stagger: {
     from: "start",
     amount: 0.2
@@ -2174,7 +2174,7 @@ moTl.to(vertsMobile, {
 moTl.to({}, {duration: 0.05})
 moTl.to(hortsMobile, {
   duration: 0.6,
-  opacity: 0.4,
+   autoAlpha: 0.4,
   scaleX: 1,
   stagger: {
     from: "start",
@@ -2183,7 +2183,7 @@ moTl.to(hortsMobile, {
 });
 
 moTl.to(hortsMobile, {
-  opacity: 0,
+   autoAlpha: 0,
   duration: 0.4,
   stagger: {
     from: "start",
@@ -2196,7 +2196,7 @@ moTl.to({}, {duration: 0.1});
 moTl.set(".maintextMobile",
            {
   scale: 1,
-  opacity: 0.6,
+   autoAlpha: 0.6,
   duration: 0.4,
   stagger: {
     amount: 0.3,
@@ -2207,7 +2207,7 @@ moTl.set(".maintextMobile",
 moTl.to(".maintextMobile",
            {
   scale: 1,
-  opacity: 0,
+   autoAlpha: 0,
   duration: 0.1,
   stagger: {
     amount: 0.3,
@@ -2221,14 +2221,14 @@ moTl.to({}, {duration: 0.1});
 
 moTl.set(vertsMobile, {
    y: i=>i%2===0 ? 20 : -20,
-  opacity: 0,
+   autoAlpha: 0,
   scaleY: 1
 });
 
 moTl.to(vertsMobile, {
   duration: 0.6,
   y: 0,
-  opacity: 0.4,
+   autoAlpha: 0.4,
   ease: "sine.out",
     stagger: {
     from: "start",
@@ -2238,7 +2238,7 @@ moTl.to(vertsMobile, {
 
 moTl.to(vertsMobile, {
   duration: 0.4,
-  opacity: 0,
+   autoAlpha: 0,
   scaleX: 1.2,
     ease: "sine.in",
   stagger: {
@@ -2256,7 +2256,7 @@ moTl.to(vertsMobile, {
   background: cinemaColor,
   y: 0,
   ease: "sine.out",
-  opacity: 0.4,
+   autoAlpha: 0.4,
 });
 moTl.to({}, {duration: 0.2})
 
@@ -2264,7 +2264,7 @@ moTl.to(vertsMobile, {
      y: i=>i%2===0 ? 20 : -20,
   duration: 0.6,
     ease: "sine.out",
-  opacity: 0
+   autoAlpha: 0,
 });
 
 
@@ -2273,7 +2273,7 @@ moTl.to({}, {duration: 0.1})
 moTl.set(".maintextMobile",
            {
   scale: 1,
-  opacity: 0.6,
+   autoAlpha: 0.6,
   duration: 0.4,
   stagger: {
     amount: 0.3
@@ -2283,7 +2283,7 @@ moTl.set(".maintextMobile",
 moTl.to(".maintextMobile",
            {
   scale: 1,
-  opacity: 0,
+   autoAlpha: 0,
   color: 	cinemaColor,
   duration: 0.1,
   stagger: {
@@ -2294,7 +2294,7 @@ moTl.to(".maintextMobile",
 moTl.to(".maintextMobile",
            {
   scale: 1,
-  opacity: 0.0,
+   autoAlpha: 0,
   duration: 0.05,
 });
 
@@ -2303,19 +2303,19 @@ moTl.to({}, {duration: 0.1})
 
 moTl.to(".endtextMobile", {
   duration: 4.8,
-  opacity: 1,
+   autoAlpha: 1,
 })
   
   
   
   
   moTl.fromTo([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]], {
-  opacity: 0,
+   autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.4,
-  opacity: 1,
+  autoAlpha: 1,
   duration: 0.2,
   stagger: {
     amount: 1.8
