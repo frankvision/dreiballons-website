@@ -2406,10 +2406,15 @@ function handleBreakpointChange(e) {
   }
 }
 
-handleBreakpointChange(mq);
-mq.addEventListener("change", handleBreakpointChange);
 
+window.addEventListener("load", () => {
+  document.body.classList.add("ready");
 
+  setTimeout(() => {
+    handleBreakpointChange(mq);
+    mq.addEventListener("change", handleBreakpointChange);
+  }, 1500); // muss zur CSS transition-duration passen
+});
 
 const contactForm = document.querySelector(".contact-form");
 
