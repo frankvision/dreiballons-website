@@ -1032,7 +1032,7 @@ const h3Time = 0.1;
 const triangleTl = gsap.timeline({
   scrollTrigger: {
  trigger: ".triangleblock",
-    start: "top 54%",
+    start: "top 56%",
     toggleActions: "play none none none"
 }
 })
@@ -1066,7 +1066,7 @@ triangleTl.from(triangleWedges, {
 const circleTl = gsap.timeline({
   scrollTrigger: {
  trigger: ".circleblock",
-    start: "top 54%",
+    start: "top 56%",
     toggleActions: "play none none none"
 }
 })
@@ -1102,7 +1102,7 @@ circleTl.from(circleWedges, {
 const squareTl = gsap.timeline({
   scrollTrigger: {
  trigger: ".squareblock",
-    start: "top 54%",
+    start: "top 56%",
     toggleActions: "play none none none"
 }
 })
@@ -1531,13 +1531,9 @@ const letswork = SplitText.create(".letswork",{});
 const letsworksub = SplitText.create(".letsworksub", {});
 const rightnow = SplitText.create(".rightnow", {});
 
-const letsworkheader= document.querySelector(".letswork");
-
-letsworkheader.style.opacity = 0;
-
-const letsworksubheader= document.querySelector(".letsworksub");
-
-letsworksubheader.style.opacity = 0;
+gsap.set([letswork, letsworksub], {
+  opacity: 0
+});
 
 const letsTl = gsap.timeline({
   repeat: -1,
