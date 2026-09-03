@@ -968,7 +968,7 @@ svg.setAttribute("viewBox", "0 0 40 40");
 
 const sctl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".forwork",
+    trigger: ".introblock",
     start: "top 50%",
     toggleActions: "play none none none"
   }
