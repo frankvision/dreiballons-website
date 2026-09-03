@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText);
 
 
 const shapeColor = "	#C41E3A66";
@@ -2653,15 +2653,14 @@ gsap.set(".balloons", {
 })
 
 
-const scrollTops = document.querySelectorAll(".scrollTop")
-
-scrollTops.forEach(el=> {
-el.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+const scrollTops = document.querySelectorAll(".scrollTop");
+scrollTops.forEach(el => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    gsap.to(window, {
+      duration: 1.8,
+      scrollTo: 0,
+      ease: "sine.out"
+    });
   });
 });
-  
-  })
