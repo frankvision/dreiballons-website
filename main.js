@@ -2345,7 +2345,7 @@ autoAlpha: 0,
   opacity: 1,
   duration: cd,
   stagger: {
-    amount: 1.8
+    amount: 0.2
   }
    ,
 });
