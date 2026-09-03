@@ -2371,7 +2371,7 @@ autoAlpha: 0,
        scale: 0.4,
     autoAlpha: 1,
   stagger: {
-    amount: 1,
+    amount: 0.8,
   }
    ,
 },">0.6");
@@ -2384,7 +2384,7 @@ autoAlpha: 0,
     autoAlpha: 0,
     clearProps: "transform",
   stagger: {
-    amount: 1,
+    amount: 0.8,
     from: "end"
   }
    ,
@@ -2400,7 +2400,7 @@ autoAlpha: 0,
 moTl.set(".endtextMobile", {
   autoAlpha: 0,
   duration: 0.2
-},">0.4")
+},">0.3")
 moTl.to({}, {duration: 2})
 
  
