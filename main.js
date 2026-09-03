@@ -5,6 +5,8 @@ const shapeColor = "	#C41E3A66";
 
 const cinemaColor = shapeColor;
 
+const triggerFire = "top 60%";
+
 function shuffle(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -1032,7 +1034,7 @@ const h3Time = 0.1;
 const triangleTl = gsap.timeline({
   scrollTrigger: {
  trigger: ".triangleblock",
-    start: "top 56%",
+    start: triggerFire,
     toggleActions: "play none none none"
 }
 })
@@ -1066,7 +1068,7 @@ triangleTl.from(triangleWedges, {
 const circleTl = gsap.timeline({
   scrollTrigger: {
  trigger: ".circleblock",
-    start: "top 56%",
+    start: triggerFire,
     toggleActions: "play none none none"
 }
 })
@@ -1102,7 +1104,7 @@ circleTl.from(circleWedges, {
 const squareTl = gsap.timeline({
   scrollTrigger: {
  trigger: ".squareblock",
-    start: "top 56%",
+    start: triggerFire,
     toggleActions: "play none none none"
 }
 })
@@ -1539,7 +1541,7 @@ const letsTl = gsap.timeline({
   repeat: -1,
   scrollTrigger: {
     trigger: ".doit",
-    start: "top 54%"
+    start: triggerFire
   }
 })
 letsTl.set(letsworksub.chars, {
@@ -1644,7 +1646,7 @@ const bottomsecond = SplitText.create(".bottomsecond", {});
 const bottomTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".bottom",
-    start: "top 50%"
+    start: triggerFire
   }
 })
 
@@ -1770,7 +1772,7 @@ y: 40,
 const formTl = gsap.timeline({
   scrollTrigger: {
     trigger: "form",
-    start: "top 50%"
+    start: triggerFire
   }
 })
 
