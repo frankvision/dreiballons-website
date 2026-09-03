@@ -2366,27 +2366,31 @@ autoAlpha: 0,
      moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
   duration: 0.2,
+       scale: 0.2,
     autoAlpha: 1,
-    clearProps: "transform",
   stagger: {
-    amount: 0.6,
-    from: "end"
+    amount: 1,
   }
    ,
 },">0.2");
   
   
-  moTl.to([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
+  moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
   duration: 0.2,
+       scale: 0.2,
     autoAlpha: 0,
     clearProps: "transform",
   stagger: {
-    amount: 0.6,
+    amount: 1,
     from: "end"
   }
    ,
 },">0.2");
+  
+  
+  
+
 
 
 
@@ -2394,8 +2398,8 @@ autoAlpha: 0,
 moTl.to(".endtextMobile", {
   autoAlpha: 0,
   duration: 0.6
-},"<")
-moTl.to({}, {duration: 0.6})
+},"<.8")
+moTl.to({}, {duration: 0.8})
 
  
   
