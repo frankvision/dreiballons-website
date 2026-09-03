@@ -1974,20 +1974,6 @@ const split = SplitText.create(".endtitleMobile", {
 });
 
 
-  moTl.addLabel("point1", 0);
-  moTl.addLabel("point2", 1);
-  moTl.addLabel("point3", 2);
-  moTl.addLabel("point4", 3);
-  moTl.addLabel("point5", 4);
-  moTl.addLabel("point6", 5);
-  moTl.addLabel("point7", 6);
-  moTl.addLabel("point8", 7);
-  moTl.addLabel("point9", 8);
-  moTl.addLabel("point10", 9);
-  moTl.addLabel("point11", 10);
-  moTl.addLabel("point12", 11);
-  moTl.addLabel("point13", 12);
-  moTl.addLabel("point14", 13);
   
   
 const moTl = gsap.timeline({
@@ -2024,8 +2010,7 @@ moTl.fromTo(pairsMobile[1], {
   stagger: {
     amount: 0.3
   }
-},"point1");
-  
+});
 moTl.fromTo(pairsMobile[10], {
    autoAlpha: 0,
   scale: 0.2,
@@ -2037,7 +2022,7 @@ moTl.fromTo(pairsMobile[10], {
   stagger: {
     amount: 0.3
   }
-},"point1");
+},"<");
 
 moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
    autoAlpha: 0,
@@ -2050,7 +2035,7 @@ moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
   stagger: {
     amount: 0.24
   }
-},"point1");
+},"<");
   
   
 moTl.fromTo([pairsMobile[3], pairsMobile[9]], {
@@ -2064,7 +2049,7 @@ moTl.fromTo([pairsMobile[3], pairsMobile[9]], {
   stagger: {
     amount: 0.28
   }
-},"point1");
+},"<");
 
 
 
@@ -2088,7 +2073,7 @@ moTl.fromTo(pairsMobile[0], {
   stagger: {
     amount: 0.3
   }
-},"point2");
+},"<0.6");
   
   
 moTl.fromTo(pairsMobile[2], {
@@ -2102,7 +2087,7 @@ moTl.fromTo(pairsMobile[2], {
   stagger: {
     amount: 0.3
   }
-},"point2");
+},"<");
 
 moTl.fromTo([pairsMobile[3],pairsMobile[6]],{
    autoAlpha: 0,
@@ -2115,7 +2100,7 @@ moTl.fromTo([pairsMobile[3],pairsMobile[6]],{
   stagger: {
     amount: 0.3
   }
-},"point2");
+},"<");
 
 moTl.fromTo([pairsMobile[5], pairsMobile[9]], {
    autoAlpha: 0,
@@ -2128,7 +2113,7 @@ moTl.fromTo([pairsMobile[5], pairsMobile[9]], {
   stagger: {
     amount: 0.3
   }
-},"point2");
+},"<");
 
 moTl.fromTo(pairsMobile[11], {
    autoAlpha: 0,
@@ -2141,15 +2126,15 @@ moTl.fromTo(pairsMobile[11], {
   stagger: {
     amount: 0.4
   }
-},"point2");
+},"<");
 
 
-
+moTl.to({}, {duration: 0.2})
 moTl.to(pairsMobile, {
    autoAlpha: 0,
   duration: 0.2
 });
-
+moTl.to({}, {duration: 0.1})
 moTl.set(".maintextMobile",
            {
   scale: 1,
@@ -2158,7 +2143,7 @@ moTl.set(".maintextMobile",
   stagger: {
     amount: 0.3
   }
-},"point3");
+});
 
 moTl.to(".maintextMobile",
            {
@@ -2169,7 +2154,7 @@ moTl.to(".maintextMobile",
     amount: 0.3
   }
 });
-
+moTl.to({}, {duration: 0.1})
 
 moTl.set(hortsMobile, {
    autoAlpha: 0,
@@ -2183,7 +2168,7 @@ moTl.to(vertsMobile, {
     from: "start",
     amount: 0.1
   }
-},"point4");
+});
 
 moTl.to(vertsMobile, {
   transformOrigin: "50% 50%",
@@ -2195,7 +2180,7 @@ moTl.to(vertsMobile, {
   }
 });
 
-
+moTl.to({}, {duration: 0.05})
 moTl.to(hortsMobile, {
   duration: 0.6,
    autoAlpha: 0.4,
@@ -2204,7 +2189,7 @@ moTl.to(hortsMobile, {
     from: "start",
     amount: 0.01
   }
-},"point5");
+});
 
 moTl.to(hortsMobile, {
    autoAlpha: 0,
@@ -2215,7 +2200,7 @@ moTl.to(hortsMobile, {
   }
 });
 
-
+moTl.to({}, {duration: 0.1});
 
 moTl.set(".maintextMobile",
            {
@@ -2226,7 +2211,7 @@ moTl.set(".maintextMobile",
     amount: 0.3,
     from: "end"
   }
-},"point6");
+});
 
 moTl.to(".maintextMobile",
            {
@@ -2238,7 +2223,7 @@ moTl.to(".maintextMobile",
     from: "end"
   }
 });
-
+moTl.to({}, {duration: 0.1});
 
 
 
@@ -2258,7 +2243,7 @@ moTl.to(vertsMobile, {
     from: "start",
     amount: 0.1
   }
-},"point7");
+});
 
 moTl.to(vertsMobile, {
   duration: 0.4,
@@ -2281,7 +2266,7 @@ moTl.to(vertsMobile, {
   y: 0,
   ease: "sine.out",
    autoAlpha: 0.4,
-}, "point8");
+});
 moTl.to({}, {duration: 0.2})
 
 moTl.to(vertsMobile, {
@@ -2313,7 +2298,7 @@ moTl.to(".maintextMobile",
   stagger: {
     amount: 0.3
   }
-},"point9");
+});
 
 moTl.to(".maintextMobile",
            {
@@ -2328,7 +2313,7 @@ moTl.to({}, {duration: 0.1})
 moTl.to(".endtextMobile", {
   duration: 4.8,
    autoAlpha: 1,
-},"point10")
+})
   
   
   
@@ -2345,7 +2330,7 @@ moTl.to(".endtextMobile", {
     amount: 0.4
   }
    ,
-},"point11");
+},"<1.4");
   
    moTl.to([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]],
            {
@@ -2373,7 +2358,7 @@ autoAlpha: 0,
     amount: 0.4
   }
    ,
-},"point12");
+},">0.8");
   
   
   moTl.to([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]],
@@ -2398,7 +2383,7 @@ autoAlpha: 0,
     amount: 0.8,
   }
    ,
-},"point13");
+},">0.6");
   
   
   moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
