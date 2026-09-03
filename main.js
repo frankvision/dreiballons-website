@@ -2524,7 +2524,7 @@ const oxa = xm2 * 1;
    backdrop.setAttribute("fill", "#242424");
   backdrop.setAttribute("x", "30.5%");
     backdrop.setAttribute("y", "0");
-  backdrop.setAttribute("fill-opacity", 0.9)
+  backdrop.setAttribute("fill-opacity", 1)
   
   svg2.append(backdrop);
   
