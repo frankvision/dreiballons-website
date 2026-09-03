@@ -42,19 +42,12 @@ html {
 
 .spacer {
 
-  height: none;
+height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
     @media  (min-width: 600px) {
     display: none;   
-  }
-    @media (max-width: 600px) {
-      position: fixed;
-  top: 2rem;
-  left: 2rem;
-  z-index: 10;
-
   }
 }
 
