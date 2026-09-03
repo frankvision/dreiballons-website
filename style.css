@@ -764,3 +764,7 @@ body.ready {
 #myLogo {
   opacity: 0;
 }
+
+.balloons {
+  opacity: 0.4;
+}
