@@ -2006,7 +2006,7 @@ const moTl = gsap.timeline({
   moTl.addLabel("point20", 19);
   
 
-moTl.timeScale(1);
+moTl.timeScale(0.9);
 moTl.set(".horts100", {
 autoAlpha: 0,
 });
@@ -2287,7 +2287,11 @@ moTl.to(vertsMobile, {
   }
 });
 
-
+moTl.set(vertsMobile, {
+   x: i=>i%2===0 ? 20 : -20,
+   autoAlpha: 0,
+  scaleY: 1
+});
 ////move8////
 moTl.to(hortsMobile, {
   duration: 0.4,
