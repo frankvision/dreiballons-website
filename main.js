@@ -2337,12 +2337,12 @@ autoAlpha: 0,
   
   
     moTl.fromTo([pairsMobile[2], pairsMobile[3], pairsMobile[8], pairsMobile[11]], {
-  opacity: 0,
+    autoAlpha: 0,
   scale: 0.2,
 },
            {
   scale: 0.4,
-  opacity: 1,
+    autoAlpha: 1,
   duration: cd,
   stagger: {
     amount: 0.2
@@ -2370,13 +2370,13 @@ autoAlpha: 0,
 */
 moTl.to({}, {duration: 0.5})
 moTl.set(".endtextMobile", {
-  opacity: 1,
+  autoAlpha: 1
 })
 moTl.to({}, {duration: .6})
 
 
 moTl.to(".endtextMobile", {
-  opacity: 0,
+  autoAlpha: 0,
   duration: 0.4
 })
 moTl.to({}, {duration: 0.2})
