@@ -1533,9 +1533,8 @@ const letswork = SplitText.create(".letswork",{});
 const letsworksub = SplitText.create(".letsworksub", {});
 const rightnow = SplitText.create(".rightnow", {});
 
-gsap.set([letswork, letsworksub], {
-  opacity: 0
-});
+gsap.set(letswork.chars, { opacity: 0 });
+gsap.set(letsworksub.chars, { opacity: 0 });
 
 const letsTl = gsap.timeline({
   repeat: -1,
