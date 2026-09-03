@@ -109,3 +109,18 @@ svg2.append(coverRect);
 
 const myLogo = document.querySelector(".containerMylogo");
 
+
+
+const scrollTops = document.querySelectorAll(".scrollTop")
+
+scrollTops.forEach(el=> {
+el.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+  
+  })
+
