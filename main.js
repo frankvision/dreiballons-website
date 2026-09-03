@@ -1531,7 +1531,13 @@ const letswork = SplitText.create(".letswork",{});
 const letsworksub = SplitText.create(".letsworksub", {});
 const rightnow = SplitText.create(".rightnow", {});
 
+const letsworkheader= document.querySelector(".letswork");
 
+letsworkheader.style.opacity = 0;
+
+const letsworksubheader= document.querySelector(".letsworksub");
+
+letsworksubheader.style.opacity = 0;
 
 const letsTl = gsap.timeline({
   repeat: -1,
