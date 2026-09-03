@@ -667,10 +667,9 @@ nav a {
 .containerMyLogoWrapper {
 
     position: fixed;
-  top: 1.2rem;
+  top: 0.4rem;
   left: 1.2rem;
   z-index: 10;
-    padding-block: 6px;
 
 }
 .containerMyLogo {
