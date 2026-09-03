@@ -2366,7 +2366,7 @@ autoAlpha: 0,
      moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
   duration: 0.2,
-       scale: 0.2,
+       scale: 0.4,
     autoAlpha: 1,
   stagger: {
     amount: 1,
@@ -2397,9 +2397,9 @@ autoAlpha: 0,
 
 moTl.to(".endtextMobile", {
   autoAlpha: 0,
-  duration: 0.6
-},"<.8")
-moTl.to({}, {duration: 0.8})
+  duration: 0.2
+})
+moTl.to({}, {duration: 1.4})
 
  
   
