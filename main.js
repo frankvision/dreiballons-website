@@ -2401,7 +2401,7 @@ moTl.set(".endtextMobile", {
   autoAlpha: 0,
   duration: 0.2
 },">0.4")
-moTl.to({}, {duration: 1.8})
+moTl.to({}, {duration: 2})
 
  
   
