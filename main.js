@@ -2069,7 +2069,7 @@ moTl.fromTo(pairsMobile[0], {
   stagger: {
     amount: 0.2
   }
-});
+},"<0.2");
 moTl.fromTo(pairsMobile[2], {
    autoAlpha: 0,
   scale: 0.2,
