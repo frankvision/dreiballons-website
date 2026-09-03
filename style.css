@@ -715,7 +715,7 @@ color: var(--paraColor);
   font-size: max(14px, 1.8vw);  
 }
 
-.pairs100 {
+.pairsMobile {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translateZ(0);
