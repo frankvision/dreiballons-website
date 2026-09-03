@@ -2664,3 +2664,29 @@ scrollTops.forEach(el => {
     });
   });
 });
+
+ScrollTrigger.matchMedia({
+  "(max-width: 600px)": function() {
+    ScrollTrigger.create({
+      start: 0,
+      end: "max",
+      onUpdate: (self) => {
+        if (self.direction === 1) {
+          gsap.to(".containerMyLogoWrapper", {
+            y: -100,
+            autoAlpha: 0,
+            duration: 0.3,
+            ease: "power2.out"
+          });
+        } else {
+          gsap.to(".containerMyLogoWrapper", {
+            y: 0,
+            autoAlpha: 1,
+            duration: 0.3,
+            ease: "power2.out"
+          });
+        }
+      }
+    });
+  }
+});
