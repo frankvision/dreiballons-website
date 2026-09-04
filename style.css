@@ -767,9 +767,6 @@ body.ready {
 }
 
 .crossx100, .crossy100 {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+
   will-change: transform;
 }
