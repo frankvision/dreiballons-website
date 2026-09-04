@@ -2106,7 +2106,7 @@ moTl.fromTo(pairsMobile[0], {
   }
 }, "point2");
   
-  moTl.fromTo(pairsMobile[10], {
+  moTl.fromTo(pairsMobile[4], {
    autoAlpha: 0,
   scale: 0.2,
 },
