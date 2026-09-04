@@ -2439,6 +2439,7 @@ autoAlpha: 0,
   duration: 0.2,
        scale: 0.4,
     autoAlpha: 1,
+        transformOrigin: "center",
   stagger: {
     amount: 0.8,
   }
@@ -2452,6 +2453,7 @@ autoAlpha: 0,
   duration: 0.1,
     transformOrigin: "center",
     autoAlpha: 0,
+    scale: -1,
     clearProps: "transform",
   stagger: {
     amount: 0.8,
