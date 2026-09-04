@@ -2111,7 +2111,7 @@ moTl.fromTo(pairsMobile[0], {
   scale: 0.2,
 },
            {
-  scale: 0.2,
+  scale: 0.4,
    autoAlpha: 1,
   duration: cd,
   stagger: {
@@ -2168,7 +2168,7 @@ moTl.fromTo(pairsMobile[11], {
    autoAlpha: 1,
   duration: cd,
   stagger: {
-    amount: 0.4
+    amount: 0.28
   }
 },"<");
 
