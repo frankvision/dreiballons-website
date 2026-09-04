@@ -3,23 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#242424">
-<title>Drei Ballons – Impressum & Datenschutz</title>
+<meta name="theme-color" content="#1d1d1d">
+<title>Impressum & Datenschutz</title>
 <link rel="stylesheet" href="style.css">
-<!-- Privacy-friendly analytics by Plausible -->
-<script async src="https://plausible.io/js/pa-0sFMCnobWKdrXVSWFpQjn.js"></script>
-<script>
-  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-  plausible.init()
-</script>
 </head>
 <body>
-
   <div class="mainwrapper">
-  <div class="spacer" style="height: 400px;"></div>
+
     <div class="containerMyLogoWrapper">
       <div class="containerMyLogo">
-         <a href="#" class="svgMyLogo" class="scrollTop">
+        <div class="logoBackground"></div>
+        <a href="index.html" class="svgMyLogo scrollTop">
           <svg id="myLogo" viewBox="0 0 300 100"></svg>
         </a>
       </div>
@@ -33,7 +27,7 @@
 
       <p>
         Torben Süßkoch<br>
-        Im Schelp 18<br>
+        Schelp 18<br>
         29227 Celle
       </p>
 
@@ -99,15 +93,18 @@
 
       <footer>
         <nav>
-          <a href="impressum-datenschutz.html">Impressum</a>
+          <a href="impressum-datenschutz.html#impressum">Impressum</a>
           <a href="impressum-datenschutz.html#datenschutz">Datenschutz</a>
-          <a href="#" class="scrollTop">Home</a>
+          <a href="index.html">Zur Startseite</a>
         </nav>
          
   </footer>
 
   </div>
 
-  <script src="impressum-datenschutz.js" defer></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js" defer></script>
+<script src="impressum-datenschutz.js" defer></script>
 </body>
 </html>
