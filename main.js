@@ -1940,7 +1940,7 @@ function drawLay(targetSelector, cinemaNumber, rowAmount, crossColor) {
         hortsMobile.push(hort);
       } */
 
-      if (row === 0) {
+      /* if (row === 0) {
         let vert = document.createElement("div");
         vert.style.background = cinemaColor;
         vert.style.position = "absolute";
@@ -1954,6 +1954,7 @@ function drawLay(targetSelector, cinemaNumber, rowAmount, crossColor) {
         target.append(vert);
         vertsMobile.push(vert);
       }
+      */
 
       counter++;
     }
