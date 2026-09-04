@@ -1924,7 +1924,7 @@ function drawLay(targetSelector, cinemaNumber, rowAmount, crossColor) {
       pairsMobile.push(pair);
       target.append(pair);
 
-      /* if (col === 0) {
+      if (col === 0) {
          let hort = document.createElement("div");
         hort.style.background = cinemaColor;
         hort.style.position = "absolute";
@@ -1938,9 +1938,9 @@ function drawLay(targetSelector, cinemaNumber, rowAmount, crossColor) {
         hort.classList.add(classHorts);
         target.append(hort);
         hortsMobile.push(hort);
-      } */
+      }
 
-      /* if (row === 0) {
+      if (row === 0) {
         let vert = document.createElement("div");
         vert.style.background = cinemaColor;
         vert.style.position = "absolute";
@@ -1954,7 +1954,6 @@ function drawLay(targetSelector, cinemaNumber, rowAmount, crossColor) {
         target.append(vert);
         vertsMobile.push(vert);
       }
-      */
 
       counter++;
     }
@@ -2451,7 +2450,6 @@ autoAlpha: 0,
   moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
   duration: 0.1,
-       scale: 0,
     autoAlpha: 0,
     clearProps: "transform",
   stagger: {
