@@ -2032,7 +2032,7 @@ moTl.fromTo(pairsMobile[1], {
   scale: 0.2,
 },
            {
-  scale: 0.6,
+  scale: 0.3,
    autoAlpha: 1,
   duration: cd,
   stagger: {
@@ -2059,7 +2059,7 @@ moTl.fromTo([pairsMobile[3], pairsMobile[5]], {
   scale: 0.2,
 },
            {
-  scale: 0.6,
+  scale: 0.5,
    autoAlpha: 1,
   duration: cd,
   stagger: {
