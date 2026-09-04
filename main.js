@@ -2454,7 +2454,6 @@ autoAlpha: 0,
     transformOrigin: "center",
     autoAlpha: 0,
     scale: 0,
-    clearProps: "transform",
   stagger: {
     amount: 0.8,
     from: "end"
@@ -2462,16 +2461,7 @@ autoAlpha: 0,
    ,
 },"point17");
   
-    moTl.to([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
-           {
-  duration: 0,
-    transformOrigin: "center",
-    autoAlpha: 0,
-    scale: 0,
-    clearProps: "transform",
-      x: 4,
-      fill: "black"
-},">");
+  
   
   
 /*    moTl.to([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
