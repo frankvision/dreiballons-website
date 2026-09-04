@@ -168,10 +168,7 @@ z-index: -1;
   transform-origin: center;
  z-index: -1; 
 }
-.pairs {
- opacity: 0; 
-  position: absolute;
-}
+
 .maintext {
   font-size: 6.6vw;
   letter-spacing: 4px;
