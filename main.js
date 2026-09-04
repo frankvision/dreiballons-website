@@ -1849,7 +1849,7 @@ function drawLay(targetSelector, cinemaNumber, rowAmount, crossColor) {
 
   if (cellSize <= 0) return; // guard against runaway col 
   const gridHeight = cellSize * rows;
-  const cols = Math.floor(rect.width / cellSize);
+  const cols = rows;
   const gridWidth = cols * cellSize;
   const offsetY = (rect.height - gridHeight) / 2;
   const offsetX = (rect.width - gridWidth) / 2;
@@ -2039,7 +2039,7 @@ moTl.fromTo(pairsMobile[1], {
     amount: 0.3
   }
 }, "point1");
-moTl.fromTo(pairsMobile[10], {
+moTl.fromTo(pairsMobile[4], {
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2066,7 +2066,7 @@ moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
 },"<");
   
   
-moTl.fromTo([pairsMobile[3], pairsMobile[9]], {
+moTl.fromTo([pairsMobile[3], pairsMobile[8]], {
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2147,7 +2147,7 @@ moTl.fromTo([pairsMobile[5],pairsMobile[6]],{
   }
 },"<");
 
-moTl.fromTo([pairsMobile[5], pairsMobile[9]], {
+moTl.fromTo([pairsMobile[6], pairsMobile[9]], {
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2160,7 +2160,7 @@ moTl.fromTo([pairsMobile[5], pairsMobile[9]], {
   }
 },"<");
 
-moTl.fromTo(pairsMobile[11], {
+moTl.fromTo(pairsMobile[3], {
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2371,7 +2371,7 @@ moTl.to(".endtextMobile", {
   ////move11////
   
   ////move12////
-  moTl.fromTo([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]], {
+  moTl.fromTo([pairsMobile[1], pairsMobile[2], pairsMobile[6], pairsMobile[7]], {
    autoAlpha: 0,
   scale: 0.2,
 },
@@ -2388,7 +2388,7 @@ moTl.to(".endtextMobile", {
   
   ////move13////
   
-   moTl.to([pairsMobile[1], pairsMobile[2], pairsMobile[8], pairsMobile[10]],
+   moTl.to([pairsMobile[1], pairsMobile[2], pairsMobile[7], pairsMobile[8]],
            {
 autoAlpha: 0,
   duration: 0.2,
@@ -2403,7 +2403,7 @@ autoAlpha: 0,
   
   
 ////move14////
-  moTl.fromTo([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[9]], {
+  moTl.fromTo([pairsMobile[0], pairsMobile[1], pairsMobile[7], pairsMobile[8]], {
     autoAlpha: 0,
   scale: 0.2,
 },
