@@ -2450,6 +2450,7 @@ autoAlpha: 0,
   moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
   duration: 0.1,
+    transformOrigin: "center",
     autoAlpha: 0,
     clearProps: "transform",
   stagger: {
