@@ -703,7 +703,7 @@ nav a {
 
 
 .imprint {
-  margin-top: 40px;
+  padding-top: 80px;
   h3 {
   margin-block: max(24px, 1.8vw);
   font-size: max(18px, 3vw);
