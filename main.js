@@ -2087,7 +2087,8 @@ moTl.fromTo([pairsMobile[3], pairsMobile[9]], {
 moTl.to({}, {duration: 0.2})
 moTl.to(pairsMobile, {
    autoAlpha: 0,
-  duration: 0.2
+  duration: 0.2,
+    clearProps: "transform"
 });
 
   ////move2////
@@ -2176,7 +2177,8 @@ moTl.fromTo(pairsMobile[11], {
 moTl.to({}, {duration: 0.2})
 moTl.to(pairsMobile, {
    autoAlpha: 0,
-  duration: 0.2
+  duration: 0.2,
+    clearProps: "transform"
 });
   
   ////move3////
