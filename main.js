@@ -2455,6 +2455,7 @@ autoAlpha: 0,
     autoAlpha: 0,
     scale: 0,
     x: 4,
+    fill: "#121212",
     clearProps: "transform",
   stagger: {
     amount: 0.8,
