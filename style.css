@@ -102,7 +102,7 @@ body {
   min-height: 100vh;
   background: linear-gradient(80deg, #0a0a0a, #151515, #242424);
   color: #f3f0ea;
-  font-family: 'Arial';
+  font-family: "Arial", "Helvetica",  "Segoe UI", "Roboto", sans-serif;
   padding-bottom: 60px;
 
     padding-top: env(safe-area-inset-top);
@@ -202,12 +202,12 @@ z-index: -1;
   margin-block: max(24px, 1.4vw);
   font-size: max(18px, 3vw);
   letter-spacing: 0.06em;
-  font-weight: 100;
+  font-weight: 300;
 }
 .block .col p {
 color: var(--paraColor);
   line-height: 1.8;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.02em;
   font-size: max(14px, 1.82vw);
 }
@@ -217,7 +217,7 @@ color: var(--paraColor);
   text-wrap: nowrap;
   color: #343434;
   line-height: 1.8;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.02em;
   font-size: max(14px, 1.82vw);
   font-style: italic;
@@ -359,7 +359,7 @@ footer nav a {
  
     li {
       padding: 14px;
-      font-weight: 100;
+      font-weight: 300;
       letter-spacing: 0.2em;
       
   }
@@ -545,7 +545,7 @@ footer nav a {
   label {
     padding: 10px max(4vw, 4px);
     color: white;
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase;
     opacity: 0.5;
     text-align: center;
@@ -650,7 +650,7 @@ nav a {
   color: var(--paraColor);
   opacity: 0.5;
   line-height: 1.8;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.02em;
   font-size: max(14px, 1.82vw);
   
@@ -708,19 +708,19 @@ nav a {
   margin-block: max(24px, 1.8vw);
   font-size: max(18px, 3vw);
   letter-spacing: 0.06em;
-  font-weight: 100;
+  font-weight: 300;
   }
   h1 {
       margin-block: max(24px, 1.8vw);
   font-size: max(18px, 3vw);
   letter-spacing: 0.06em;
-  font-weight: 100;
+  font-weight: 300;
   }
   
   p {
 color: var(--paraColor);
   line-height: 1.8;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.02em;
   font-size: max(14px, 1.8vw);
     
@@ -729,7 +729,7 @@ color: var(--paraColor);
 
 .form-success {
   line-height: 1.8;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.02em;
   font-size: max(14px, 1.8vw);  
 }
