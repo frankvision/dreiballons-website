@@ -2448,9 +2448,9 @@ autoAlpha: 0,
   
   ////move17////
   
-  moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
+  moTl.to([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
-  duration: 0.1,
+  duration: 0,
     transformOrigin: "center",
     autoAlpha: 0,
     scale: 0,
