@@ -2039,18 +2039,6 @@ moTl.fromTo(pairsMobile[1], {
     amount: 0.3
   }
 }, "point1");
-moTl.fromTo(pairsMobile[6], {
-   autoAlpha: 0,
-  scale: 0.2,
-},
-           {
-  scale: 0.2,
-   autoAlpha: 1,
-  duration: cd,
-  stagger: {
-    amount: 0.3
-  }
-},"<");
 
 moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
    autoAlpha: 0,
@@ -2066,7 +2054,7 @@ moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
 },"<");
   
   
-moTl.fromTo([pairsMobile[3], pairsMobile[2]], {
+moTl.fromTo([pairsMobile[3], pairsMobile[6]], {
    autoAlpha: 0,
   scale: 0.2,
 },
