@@ -2111,7 +2111,6 @@ moTl.fromTo(pairsMobile[0], {
   scale: 0.2,
 },
            {
-    background: 
   scale: 0.2,
    autoAlpha: 1,
   duration: cd,
