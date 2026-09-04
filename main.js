@@ -2448,7 +2448,7 @@ autoAlpha: 0,
   
   moTl.to([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
-  duration: 0,
+  duration: 0.02,
        scale: 0.2,
     autoAlpha: 0,
     clearProps: "transform",
