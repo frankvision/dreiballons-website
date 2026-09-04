@@ -2061,7 +2061,7 @@ moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
    autoAlpha: 1,
   duration: cd,
   stagger: {
-    amount: 0.24
+    amount: 0.12
   }
 },"<");
   
@@ -2075,7 +2075,7 @@ moTl.fromTo([pairsMobile[3], pairsMobile[9]], {
    autoAlpha: 1,
   duration: cd,
   stagger: {
-    amount: 0.28
+    amount: 0.12
   }
 },"<");
 
@@ -2102,9 +2102,6 @@ moTl.fromTo(pairsMobile[0], {
   scale: 0.4,
    autoAlpha: 1,
   duration: cd,
-  stagger: {
-    amount: 0.3
-  }
 }, "point2");
   
   moTl.fromTo(pairsMobile[4], {
@@ -2115,9 +2112,6 @@ moTl.fromTo(pairsMobile[0], {
   scale: 0.4,
    autoAlpha: 1,
   duration: cd,
-  stagger: {
-    amount: 0.3
-  }
 },"<");
   
   
@@ -2129,9 +2123,6 @@ moTl.fromTo(pairsMobile[2], {
   scale: 0.2,
    autoAlpha: 1,
   duration: cd,
-  stagger: {
-    amount: 0.3
-  }
 },"<")
 moTl.fromTo([pairsMobile[3],pairsMobile[6]],{
    autoAlpha: 0,
@@ -2142,7 +2133,7 @@ moTl.fromTo([pairsMobile[3],pairsMobile[6]],{
    autoAlpha: 1,
   duration: cd,
   stagger: {
-    amount: 0.24
+    amount: 0.12
   }
 },"<");
 
