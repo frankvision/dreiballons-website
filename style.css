@@ -768,4 +768,5 @@ body.ready {
 
 .crossx100, .crossy100 {
 
+  will-change: transform;
 }
