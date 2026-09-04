@@ -2393,7 +2393,7 @@ autoAlpha: 0,
   
   
 ////move14////
-  moTl.fromTo([pairsMobile[0], pairsMobile[1], pairsMobile[6], pairsMobile[7]], {
+  moTl.fromTo([pairsMobile[0], pairsMobile[1], pairsMobile[6], pairsMobile[8]], {
     autoAlpha: 0,
   scale: 0.2,
 },
@@ -2410,7 +2410,7 @@ autoAlpha: 0,
   
   
   ////move15////
-  moTl.to([pairsMobile[0], pairsMobile[1], pairsMobile[6], pairsMobile[7]],
+  moTl.to([pairsMobile[0], pairsMobile[1], pairsMobile[6], pairsMobile[8]],
            {
   duration: 0.2,
     autoAlpha: 0,
