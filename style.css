@@ -704,17 +704,14 @@ nav a {
 
 .imprint {
   
-
+    @media (max-width: 600px) { 
+  padding-top: 100px;
+  }
   h3 {
   margin-block: max(24px, 1.8vw);
   font-size: max(18px, 3vw);
   letter-spacing: 0.06em;
   font-weight: 300;
-    
-    
-        @media (max-width: 600px) { 
-  padding-top: 100px;
-  }
   }
   h1 {
       margin-block: max(24px, 1.8vw);
