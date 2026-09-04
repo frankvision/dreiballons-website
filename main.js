@@ -2024,6 +2024,8 @@ moTl.set(".endtextMobile", {
 moTl.set(".pairs100", {
    autoAlpha: 0,
 });
+  
+  ////move1////
 
 moTl.fromTo(pairsMobile[1], {
    autoAlpha: 0,
@@ -2103,6 +2105,19 @@ moTl.fromTo(pairsMobile[0], {
     amount: 0.3
   }
 }, "point2");
+  
+  moTl.fromTo(pairsMobile[10], {
+   autoAlpha: 0,
+  scale: 0.2,
+},
+           {
+  scale: 0.2,
+   autoAlpha: 1,
+  duration: cd,
+  stagger: {
+    amount: 0.3
+  }
+},"<0.1");
   
   
 moTl.fromTo(pairsMobile[2], {
