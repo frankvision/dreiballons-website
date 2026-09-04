@@ -2027,12 +2027,12 @@ moTl.set(".pairs100", {
   
   ////move1////
 
-moTl.fromTo(pairsMobile[1], {
+moTl.fromTo(pairsMobile[4], {
    autoAlpha: 0,
   scale: 0.2,
 },
            {
-  scale: 0.3,
+  scale: 0.6,
    autoAlpha: 1,
   duration: cd,
   stagger: {
@@ -2040,12 +2040,12 @@ moTl.fromTo(pairsMobile[1], {
   }
 }, "point1");
 
-moTl.fromTo([pairsMobile[4],pairsMobile[7]],{
+moTl.fromTo([pairsMobile[1],pairsMobile[7]],{
    autoAlpha: 0,
   scale: 0.2,
 },
            {
-  scale: 0.6,
+  scale: 0.2,
    autoAlpha: 1,
   duration: cd,
   stagger: {
