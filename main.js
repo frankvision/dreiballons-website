@@ -2454,6 +2454,7 @@ autoAlpha: 0,
     transformOrigin: "center",
     autoAlpha: 0,
     scale: 0,
+    clearProps: "transform",
   stagger: {
     amount: 0.8,
     from: "end"
