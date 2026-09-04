@@ -2434,7 +2434,7 @@ autoAlpha: 0,
   
   
   ////move16//// 
-  moTl.set([pairsMobile[0], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
+  moTl.set([pairsMobile[5], pairsMobile[2], pairsMobile[6], pairsMobile[8]],
            {
   duration: 0.2,
        scale: 0.4,
