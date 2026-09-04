@@ -1924,8 +1924,8 @@ function drawLay(targetSelector, cinemaNumber, rowAmount, crossColor) {
       pairsMobile.push(pair);
       target.append(pair);
 
-      if (col === 0) {
-        let hort = document.createElement("div");
+      /* if (col === 0) {
+         let hort = document.createElement("div");
         hort.style.background = cinemaColor;
         hort.style.position = "absolute";
         hort.style.left = `${col * cellSize + offsetX + io}px`;
@@ -1938,7 +1938,7 @@ function drawLay(targetSelector, cinemaNumber, rowAmount, crossColor) {
         hort.classList.add(classHorts);
         target.append(hort);
         hortsMobile.push(hort);
-      }
+      } */
 
       if (row === 0) {
         let vert = document.createElement("div");
