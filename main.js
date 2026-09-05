@@ -1,7 +1,6 @@
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText);
 
-
-const shapeColor = "	#C41E3A66";
+const shapeColor = "#C41E3Abb";
 
 const cinemaColor = shapeColor;
 
