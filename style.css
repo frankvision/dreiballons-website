@@ -104,6 +104,13 @@ body {
   color: #f3f0ea;
   font-family: "Arial", "Helvetica",  "Segoe UI", "Roboto", sans-serif;
   padding-bottom: 60px;
+  
+  @media (max-width: 800px) {
+    padding-top: 60px;
+  }
+  @media (max-width: 500px) {
+    padding-top: 0;
+  }
 
     padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
