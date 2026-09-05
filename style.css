@@ -665,7 +665,8 @@ nav a {
 .containerMyLogoWrapper {
     padding-block: 26px;
   @media (min-width: 400px) and (max-width: 1000px) {
- padding-inline: 3vw;   
+ padding-inline: 3vw;
+    padding-block-end: 8px;
   }
   @media (max-width: 400px) { 
    
