@@ -664,6 +664,9 @@ nav a {
 }
 .containerMyLogoWrapper {
     padding-block: 26px;
+  @media (min-width: 400px) and (max-width: 1000px) {
+ padding-inline: 3vw;   
+  }
   @media (max-width: 400px) { 
    
     position: fixed;
@@ -671,12 +674,7 @@ nav a {
   left: 1.1rem;
   z-index: 9999;
   }
-  @media (max-width: 600px) {
-    top: 2rem;
-    left: 2rem;
-        position: fixed;
-  z-index: 9999;
-  }
+
 
 }
 .containerMyLogo {
