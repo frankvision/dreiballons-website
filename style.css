@@ -105,8 +105,8 @@ body {
   font-family: "Arial", "Helvetica",  "Segoe UI", "Roboto", sans-serif;
   padding-bottom: 60px;
   
-  @media (max-width: 800px) {
-    padding-top: 60px;
+  @media (max-width: 900px) {
+    padding-top: 200px;
   }
   @media (max-width: 500px) {
     padding-top: 0;
