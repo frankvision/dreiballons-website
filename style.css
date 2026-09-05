@@ -688,7 +688,7 @@ nav a {
   
   left: -100px;
   
-  @media (max-width: 860px) {
+  @media (max-width: 1000px) {
     left: -66px;
   } 
 }
