@@ -561,8 +561,6 @@ footer nav a {
   input {
     padding: 0 4px;
     border: none;
-
-    outline: none;
     appearance: none !important;
         border-bottom: 0.5px solid #777;
   }
